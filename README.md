@@ -1,9 +1,8 @@
-# STM32F407ZETx 확장형 개발보드 (Breadboard 포함)
+# STM32F407ZETx 개발보드
 
 **STM32F407ZETx** MCU를 중심으로 DS3231(RTC), VS1003(Audio Codec), microSD(4‑bit SDIO),
 SN65HVD230(CAN), USB‑to‑TTL, **DP83848(Ethernet PHY)** 등을 온보드로 구성하고
 대형 **브레드보드**와 12 V/5 V/3.3 V 전원 및 **SPI/I²C/PWM 헤더**를 둘러 배치한 실습·프로토타이핑 전용 보드입니다.
-목표는 “한 장의 보드로 임베디드 시스템 주변장치를 빠르게 실험/학습”입니다.
 
 ![3D Render](docs/images/render_top.png)
 
@@ -77,9 +76,3 @@ stm32f407-devboard/
       ├─ pcb_layout.png
       └─ photo_top.jpg
 ```
-
----
-
-## 6. 라이선스
-
-내부 프로젝트 정책에 따릅니다. 외부 라이브러리(FATFS, LwIP, FreeRTOS, VS10xx 드라이버 등)의 라이선스는 각 디렉터리에 명시하십시오.
