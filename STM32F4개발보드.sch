@@ -1,0 +1,5261 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR0101
+U 1 1 5CD5C746
+P 8850 1050
+F 0 "#PWR0101" H 8850 800 50  0001 C CNN
+F 1 "GND" V 8855 922 50  0000 R CNN
+F 2 "" H 8850 1050 50  0001 C CNN
+F 3 "" H 8850 1050 50  0001 C CNN
+	1    8850 1050
+	0    1    1    0   
+$EndComp
+Text GLabel 9050 1050 3    50   Input ~ 0
+VO
+Text GLabel 9450 1050 3    50   Input ~ 0
+D0
+Text GLabel 9550 1050 3    50   Input ~ 0
+D1
+Text GLabel 9650 1050 3    50   Input ~ 0
+D2
+Text GLabel 9750 1050 3    50   Input ~ 0
+D3
+$Comp
+L Device:R_POT RV4
+U 1 1 5CD65193
+P 10850 950
+F 0 "RV4" V 10643 950 50  0000 C CNN
+F 1 "10k" V 10734 950 50  0000 C CNN
+F 2 "PCB:3362P-103LF" H 10850 950 50  0001 C CNN
+F 3 "~" H 10850 950 50  0001 C CNN
+	1    10850 950 
+	0    1    1    0   
+$EndComp
+Text GLabel 10850 1100 3    50   Input ~ 0
+VO
+Wire Wire Line
+	10650 950  10700 950 
+$Comp
+L power:GND #PWR0104
+U 1 1 5CD6873E
+P 11050 950
+F 0 "#PWR0104" H 11050 700 50  0001 C CNN
+F 1 "GND" H 11055 777 50  0000 C CNN
+F 2 "" H 11050 950 50  0001 C CNN
+F 3 "" H 11050 950 50  0001 C CNN
+	1    11050 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11050 950  11000 950 
+Text Notes 8600 700  0    197  ~ 0
+CLCD
+$Comp
+L power:GND #PWR0105
+U 1 1 5CD70AE7
+P 10350 1050
+F 0 "#PWR0105" H 10350 800 50  0001 C CNN
+F 1 "GND" V 10355 922 50  0000 R CNN
+F 2 "" H 10350 1050 50  0001 C CNN
+F 3 "" H 10350 1050 50  0001 C CNN
+	1    10350 1050
+	0    -1   -1   0   
+$EndComp
+Text GLabel 10250 1050 3    50   Input ~ 0
+A
+$Comp
+L Device:R R16
+U 1 1 5CD727E6
+P 10300 700
+F 0 "R16" V 10093 700 50  0000 C CNN
+F 1 "220" V 10184 700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10230 700 50  0001 C CNN
+F 3 "~" H 10300 700 50  0001 C CNN
+	1    10300 700 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10050 700  10150 700 
+Text GLabel 10550 700  1    50   Input ~ 0
+A
+Wire Wire Line
+	10450 700  10550 700 
+$Comp
+L power:GND #PWR0107
+U 1 1 5CD7531E
+P 9250 1050
+F 0 "#PWR0107" H 9250 800 50  0001 C CNN
+F 1 "GND" H 9255 877 50  0000 C CNN
+F 2 "" H 9250 1050 50  0001 C CNN
+F 3 "" H 9250 1050 50  0001 C CNN
+	1    9250 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5CD7C4DF
+P 8800 2350
+F 0 "#PWR0110" H 8800 2100 50  0001 C CNN
+F 1 "GND" V 8805 2222 50  0000 R CNN
+F 2 "" H 8800 2350 50  0001 C CNN
+F 3 "" H 8800 2350 50  0001 C CNN
+	1    8800 2350
+	0    1    1    0   
+$EndComp
+Text GLabel 8800 2250 0    50   Input ~ 0
+MDIO
+Text GLabel 9300 2250 2    50   Input ~ 0
+MDC
+Text GLabel 8800 2150 0    50   Input ~ 0
+OSCIN
+Text GLabel 8800 2050 0    50   Input ~ 0
+RX0
+Text GLabel 9300 2150 2    50   Input ~ 0
+CRS
+Text GLabel 9300 2050 2    50   Input ~ 0
+RX1
+Text GLabel 9300 1950 2    50   Input ~ 0
+TX0
+Text GLabel 8800 1950 0    50   Input ~ 0
+TX_EN
+Text GLabel 8800 1850 0    50   Input ~ 0
+TX1
+$Comp
+L power:GND #PWR0111
+U 1 1 5CD7CC82
+P 9300 2350
+F 0 "#PWR0111" H 9300 2100 50  0001 C CNN
+F 1 "GND" V 9305 2222 50  0000 R CNN
+F 2 "" H 9300 2350 50  0001 C CNN
+F 3 "" H 9300 2350 50  0001 C CNN
+	1    9300 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 5CD93A37
+P 10850 3450
+F 0 "#PWR0113" H 10850 3200 50  0001 C CNN
+F 1 "GND" V 10855 3322 50  0000 R CNN
+F 2 "" H 10850 3450 50  0001 C CNN
+F 3 "" H 10850 3450 50  0001 C CNN
+	1    10850 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C44
+U 1 1 5CD942DE
+P 10850 3300
+F 0 "C44" H 10735 3254 50  0000 R CNN
+F 1 "330uF" H 10735 3345 50  0000 R CNN
+F 2 "PCB:c1" H 10888 3150 50  0001 C CNN
+F 3 "~" H 10850 3300 50  0001 C CNN
+	1    10850 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 5CD9A0C3
+P 10400 3450
+F 0 "#PWR0115" H 10400 3200 50  0001 C CNN
+F 1 "GND" V 10405 3322 50  0000 R CNN
+F 2 "" H 10400 3450 50  0001 C CNN
+F 3 "" H 10400 3450 50  0001 C CNN
+	1    10400 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C40
+U 1 1 5CD9A0C9
+P 10400 3300
+F 0 "C40" H 10285 3254 50  0000 R CNN
+F 1 "0.1uF" H 10285 3345 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10438 3150 50  0001 C CNN
+F 3 "~" H 10400 3300 50  0001 C CNN
+	1    10400 3300
+	-1   0    0    1   
+$EndComp
+Text GLabel 10550 2675 0    50   Input ~ 0
+MDC
+Text GLabel 10550 2575 0    50   Input ~ 0
+CRS
+Text GLabel 10550 2475 0    50   Input ~ 0
+RX1
+Text GLabel 10550 2375 0    50   Input ~ 0
+TX0
+Text GLabel 10550 1875 0    50   Input ~ 0
+MDIO
+Text GLabel 10550 1975 0    50   Input ~ 0
+OSCIN
+Text GLabel 10550 2075 0    50   Input ~ 0
+RX0
+Text GLabel 10550 2175 0    50   Input ~ 0
+TX_EN
+Text GLabel 10550 2275 0    50   Input ~ 0
+TX1
+Text Notes 8600 1400 0    59   ~ 0
+ETH(DP83848)
+$Comp
+L Connector_Generic:Conn_01x09 J16
+U 1 1 5CDE04AE
+P 10150 3300
+F 0 "J16" H 10100 3800 50  0000 L CNN
+F 1 "SD Card" H 9950 2800 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 10150 3300 50  0001 C CNN
+F 3 "~" H 10150 3300 50  0001 C CNN
+	1    10150 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x16 J15
+U 1 1 5CDE17B0
+P 9550 850
+F 0 "J15" V 9767 796 50  0000 C CNN
+F 1 "CLCD2004" V 9676 796 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x16_P2.54mm_Vertical" H 9550 850 50  0001 C CNN
+F 3 "~" H 9550 850 50  0001 C CNN
+	1    9550 850 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5CDE6920
+P 9950 3600
+F 0 "#PWR0117" H 9950 3350 50  0001 C CNN
+F 1 "GND" V 9955 3472 50  0000 R CNN
+F 2 "" H 9950 3600 50  0001 C CNN
+F 3 "" H 9950 3600 50  0001 C CNN
+	1    9950 3600
+	0    1    -1   0   
+$EndComp
+Text GLabel 9950 3500 0    50   Input ~ 0
+SDIO_D0
+Text GLabel 9950 3400 0    50   Input ~ 0
+CMD
+Text GLabel 9950 3300 0    50   Input ~ 0
+CLK
+Text GLabel 9950 3200 0    50   Input ~ 0
+SDIO_D3
+Text GLabel 9950 3100 0    50   Input ~ 0
+SDIO_D2
+Text GLabel 9950 3000 0    50   Input ~ 0
+SDIO_D1
+Text GLabel 9075 3675 2    50   Input ~ 0
+SDIO_D0
+Text GLabel 9075 3575 2    50   Input ~ 0
+CMD
+Text GLabel 9075 3475 2    50   Input ~ 0
+CLK
+Text GLabel 9075 3375 2    50   Input ~ 0
+SDIO_D3
+Text GLabel 9075 3275 2    50   Input ~ 0
+SDIO_D2
+Text GLabel 9075 3175 2    50   Input ~ 0
+SDIO_D1
+Text GLabel 9075 3075 2    50   Input ~ 0
+CD
+Wire Notes Line
+	10300 2750 10300 3900
+Text Notes 8350 2900 0    79   ~ 0
+SD Card
+$Comp
+L Connector_Generic:Conn_01x06 J17
+U 1 1 5CE26D69
+P 11000 4250
+F 0 "J17" H 11000 4550 50  0000 L CNN
+F 1 "DS3231" H 10850 3850 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 11000 4250 50  0001 C CNN
+F 3 "~" H 11000 4250 50  0001 C CNN
+	1    11000 4250
+	1    0    0    -1  
+$EndComp
+Text GLabel 10800 4050 0    50   Input ~ 0
+32k
+Text GLabel 10800 4150 0    50   Input ~ 0
+SQW
+Text GLabel 10800 4350 0    50   Input ~ 0
+SDA_DS
+$Comp
+L power:GND #PWR0119
+U 1 1 5CE2ECF0
+P 10800 4650
+F 0 "#PWR0119" H 10800 4400 50  0001 C CNN
+F 1 "GND" V 10805 4522 50  0000 R CNN
+F 2 "" H 10800 4650 50  0001 C CNN
+F 3 "" H 10800 4650 50  0001 C CNN
+	1    10800 4650
+	0    1    1    0   
+$EndComp
+Text GLabel 10150 4275 2    50   Input ~ 0
+SQW
+Text GLabel 10150 4375 2    50   Input ~ 0
+SCL_DS
+Text GLabel 10150 4475 2    50   Input ~ 0
+SDA_DS
+Wire Notes Line
+	8300 4700 8300 400 
+Wire Notes Line
+	8300 3900 11300 3900
+Wire Notes Line
+	8300 2750 10300 2750
+Wire Notes Line
+	8300 1300 11300 1300
+Wire Wire Line
+	10650 4600 10650 4450
+Wire Wire Line
+	10650 4450 10800 4450
+Wire Wire Line
+	10800 4650 10800 4550
+Text Notes 9800 4100 0    79   ~ 0
+I2C(DS3231)
+Text Notes 1400 700  0    157  ~ 0
+Pin Out
+Text GLabel 10700 5100 2    50   Input ~ 0
+RCC_OSC_IN
+$Comp
+L STM32F4개발보드-rescue:FOX924B-12.000MHz_TCXO-FOX924B-12.000MHz_TCXO Y1
+U 1 1 5CDEED4F
+P 10450 5000
+F 0 "Y1" H 10200 5150 50  0000 C CNN
+F 1 "12MHz" H 10450 4800 28  0000 C CNN
+F 2 "PCB:FT5HNBPK12.0-T1" H 10600 5200 50  0001 C CNN
+F 3 "" H 10600 5200 50  0001 C CNN
+	1    10450 5000
+	1    0    0    -1  
+$EndComp
+Text Notes 9800 4800 0    50   ~ 0
+TCXO 12.000MHz
+Wire Notes Line
+	9750 5250 11300 5250
+$Comp
+L Regulator_Switching:LM2596S-3.3 U3
+U 1 1 5CEA2C06
+P 7000 6300
+F 0 "U3" H 6650 6550 50  0000 C CNN
+F 1 "LM2596 3.3V" H 7300 6000 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 7050 6050 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2596.pdf" H 7000 6300 50  0001 C CNN
+	1    7000 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C19
+U 1 1 5CEAB526
+P 6100 6350
+F 0 "C19" H 6215 6396 50  0000 L CNN
+F 1 "470uF" H 6215 6305 50  0000 L CNN
+F 2 "PCB:MVG25WV470M" H 6138 6200 50  0001 C CNN
+F 3 "~" H 6100 6350 50  0001 C CNN
+	1    6100 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 6200 6500 6200
+$Comp
+L Device:C C17
+U 1 1 5CEAD337
+P 5650 6350
+F 0 "C17" H 5765 6396 50  0000 L CNN
+F 1 "470uF" H 5765 6305 50  0000 L CNN
+F 2 "PCB:MVG25WV470M" H 5688 6200 50  0001 C CNN
+F 3 "~" H 5650 6350 50  0001 C CNN
+	1    5650 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 6200 6100 6200
+Connection ~ 6100 6200
+Wire Wire Line
+	5650 6500 6100 6500
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0123
+U 1 1 5CEAF3C1
+P 5650 6500
+F 0 "#PWR0123" H 5650 6250 50  0001 C CNN
+F 1 "GND" H 5655 6327 50  0000 C CNN
+F 2 "" H 5650 6500 60  0000 C CNN
+F 3 "" H 5650 6500 60  0000 C CNN
+	1    5650 6500
+	1    0    0    -1  
+$EndComp
+Connection ~ 5650 6500
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0124
+U 1 1 5CEB039D
+P 7000 6600
+F 0 "#PWR0124" H 7000 6350 50  0001 C CNN
+F 1 "GND" H 7005 6427 50  0000 C CNN
+F 2 "" H 7000 6600 60  0000 C CNN
+F 3 "" H 7000 6600 60  0000 C CNN
+	1    7000 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0125
+U 1 1 5CEB13EE
+P 6500 6500
+F 0 "#PWR0125" H 6500 6250 50  0001 C CNN
+F 1 "GND" H 6505 6327 50  0000 C CNN
+F 2 "" H 6500 6500 60  0000 C CNN
+F 3 "" H 6500 6500 60  0000 C CNN
+	1    6500 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 6500 6500 6400
+$Comp
+L Device:D_Schottky D6
+U 1 1 5CEB3207
+P 7650 6550
+F 0 "D6" V 7604 6629 50  0000 L CNN
+F 1 "SS54" V 7695 6629 50  0000 L CNN
+F 2 "PCB:SS54" H 7650 6550 50  0001 C CNN
+F 3 "~" H 7650 6550 50  0001 C CNN
+	1    7650 6550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7650 6400 7500 6400
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0126
+U 1 1 5CEB5EFF
+P 7650 6700
+F 0 "#PWR0126" H 7650 6450 50  0001 C CNN
+F 1 "GND" H 7655 6527 50  0000 C CNN
+F 2 "" H 7650 6700 60  0000 C CNN
+F 3 "" H 7650 6700 60  0000 C CNN
+	1    7650 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C27
+U 1 1 5CEB63F8
+P 8300 6550
+F 0 "C27" H 8415 6596 50  0000 L CNN
+F 1 "470uF" H 8415 6505 50  0000 L CNN
+F 2 "PCB:MVG25WV470M" H 8338 6400 50  0001 C CNN
+F 3 "~" H 8300 6550 50  0001 C CNN
+	1    8300 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5CEB7900
+P 7950 6400
+F 0 "L1" V 8050 6400 50  0000 C CNN
+F 1 "33uH" V 7900 6400 50  0000 C CNN
+F 2 "PCB:SRR1806-330M" H 7950 6400 50  0001 C CNN
+F 3 "~" H 7950 6400 50  0001 C CNN
+	1    7950 6400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7650 6400 7800 6400
+Connection ~ 7650 6400
+Wire Wire Line
+	8100 6400 8300 6400
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0127
+U 1 1 5CEBC68B
+P 8300 6700
+F 0 "#PWR0127" H 8300 6450 50  0001 C CNN
+F 1 "GND" H 8305 6527 50  0000 C CNN
+F 2 "" H 8300 6700 60  0000 C CNN
+F 3 "" H 8300 6700 60  0000 C CNN
+	1    8300 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0128
+U 1 1 5CEBCD9B
+P 8750 6200
+F 0 "#PWR0128" H 8750 6050 50  0001 C CNN
+F 1 "+3.3V" H 8765 6373 50  0000 C CNN
+F 2 "" H 8750 6200 50  0001 C CNN
+F 3 "" H 8750 6200 50  0001 C CNN
+	1    8750 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C41
+U 1 1 5CED5D3C
+P 10450 5850
+F 0 "C41" H 10565 5896 50  0000 L CNN
+F 1 "0.1uF" H 10565 5805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10488 5700 50  0001 C CNN
+F 3 "~" H 10450 5850 50  0001 C CNN
+	1    10450 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C45
+U 1 1 5CED69F2
+P 10950 5850
+F 0 "C45" H 11065 5896 50  0000 L CNN
+F 1 "0.1uF" H 11065 5805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10988 5700 50  0001 C CNN
+F 3 "~" H 10950 5850 50  0001 C CNN
+	1    10950 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 5700 10950 5700
+Wire Wire Line
+	10450 6000 10700 6000
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0130
+U 1 1 5CEDEFAB
+P 10700 6000
+F 0 "#PWR0130" H 10700 5750 50  0001 C CNN
+F 1 "GND" H 10705 5827 50  0000 C CNN
+F 2 "" H 10700 6000 60  0000 C CNN
+F 3 "" H 10700 6000 60  0000 C CNN
+	1    10700 6000
+	1    0    0    -1  
+$EndComp
+Connection ~ 10700 6000
+Wire Wire Line
+	10700 6000 10950 6000
+$Comp
+L Device:C C34
+U 1 1 5CEF31DF
+P 9500 5750
+F 0 "C34" H 9615 5796 50  0000 L CNN
+F 1 "10uF" H 9615 5705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 9538 5600 50  0001 C CNN
+F 3 "~" H 9500 5750 50  0001 C CNN
+	1    9500 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0131
+U 1 1 5CEF7ADC
+P 9500 5900
+F 0 "#PWR0131" H 9500 5650 50  0001 C CNN
+F 1 "GND" H 9505 5727 50  0000 C CNN
+F 2 "" H 9500 5900 60  0000 C CNN
+F 3 "" H 9500 5900 60  0000 C CNN
+	1    9500 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C35
+U 1 1 5CF20000
+P 9500 6650
+F 0 "C35" H 9615 6696 50  0000 L CNN
+F 1 "0.1uF" H 9615 6605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9538 6500 50  0001 C CNN
+F 3 "~" H 9500 6650 50  0001 C CNN
+	1    9500 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C38
+U 1 1 5CF20006
+P 10000 6650
+F 0 "C38" H 10115 6696 50  0000 L CNN
+F 1 "0.1uF" H 10115 6605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10038 6500 50  0001 C CNN
+F 3 "~" H 10000 6650 50  0001 C CNN
+	1    10000 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 6500 10000 6500
+Text GLabel 9500 5600 1    50   Input ~ 0
+3.3VDDC
+Text GLabel 10000 6500 1    50   Input ~ 0
+3.3VADC
+$Comp
+L Device:C C37
+U 1 1 5CF3E64E
+P 10000 5750
+F 0 "C37" H 10115 5796 50  0000 L CNN
+F 1 "10uF" H 10115 5705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 10038 5600 50  0001 C CNN
+F 3 "~" H 10000 5750 50  0001 C CNN
+	1    10000 5750
+	1    0    0    -1  
+$EndComp
+Text GLabel 10000 5600 1    50   Input ~ 0
+3.3VADC
+$Comp
+L Device:Ferrite_Bead_Small FB1
+U 1 1 5CE96B1A
+P 8250 5900
+F 0 "FB1" V 8100 5900 50  0000 C CNN
+F 1 "Bead" V 8350 5900 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8180 5900 50  0001 C CNN
+F 3 "~" H 8250 5900 50  0001 C CNN
+	1    8250 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR0133
+U 1 1 5CE98F1B
+P 8500 5900
+F 0 "#PWR0133" H 8500 5650 50  0001 C CNN
+F 1 "GNDA" H 8505 5727 50  0000 C CNN
+F 2 "" H 8500 5900 50  0001 C CNN
+F 3 "" H 8500 5900 50  0001 C CNN
+	1    8500 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0134
+U 1 1 5CE999A1
+P 8000 5900
+F 0 "#PWR0134" H 8000 5650 50  0001 C CNN
+F 1 "GND" H 8005 5727 50  0000 C CNN
+F 2 "" H 8000 5900 60  0000 C CNN
+F 3 "" H 8000 5900 60  0000 C CNN
+	1    8000 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 5900 8150 5900
+Wire Wire Line
+	8350 5900 8500 5900
+$Comp
+L Regulator_Switching:LM2596S-5 U4
+U 1 1 5CEA9AFD
+P 7000 7250
+F 0 "U4" H 6650 7500 50  0000 C CNN
+F 1 "LM2596 5V" H 7300 6950 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 7050 7000 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2596.pdf" H 7000 7250 50  0001 C CNN
+	1    7000 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0135
+U 1 1 5CEACFAC
+P 7000 7550
+F 0 "#PWR0135" H 7000 7300 50  0001 C CNN
+F 1 "GND" H 7005 7377 50  0000 C CNN
+F 2 "" H 7000 7550 60  0000 C CNN
+F 3 "" H 7000 7550 60  0000 C CNN
+	1    7000 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0136
+U 1 1 5CEAE058
+P 6500 7500
+F 0 "#PWR0136" H 6500 7250 50  0001 C CNN
+F 1 "GND" H 6505 7327 50  0000 C CNN
+F 2 "" H 6500 7500 60  0000 C CNN
+F 3 "" H 6500 7500 60  0000 C CNN
+	1    6500 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 7350 6500 7500
+$Comp
+L Device:C C20
+U 1 1 5CEB21FD
+P 6100 7300
+F 0 "C20" H 6215 7346 50  0000 L CNN
+F 1 "470uF" H 6215 7255 50  0000 L CNN
+F 2 "PCB:MVG25WV470M" H 6138 7150 50  0001 C CNN
+F 3 "~" H 6100 7300 50  0001 C CNN
+	1    6100 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C18
+U 1 1 5CEB2D42
+P 5650 7300
+F 0 "C18" H 5765 7346 50  0000 L CNN
+F 1 "470uF" H 5765 7255 50  0000 L CNN
+F 2 "PCB:MVG25WV470M" H 5688 7150 50  0001 C CNN
+F 3 "~" H 5650 7300 50  0001 C CNN
+	1    5650 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 7150 6500 7150
+Wire Wire Line
+	6100 7150 5650 7150
+Connection ~ 6100 7150
+Wire Wire Line
+	6100 7450 5650 7450
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0137
+U 1 1 5CEB95F0
+P 5650 7450
+F 0 "#PWR0137" H 5650 7200 50  0001 C CNN
+F 1 "GND" H 5655 7277 50  0000 C CNN
+F 2 "" H 5650 7450 60  0000 C CNN
+F 3 "" H 5650 7450 60  0000 C CNN
+	1    5650 7450
+	1    0    0    -1  
+$EndComp
+Connection ~ 5650 7450
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0138
+U 1 1 5CEBA82D
+P 7650 7650
+F 0 "#PWR0138" H 7650 7400 50  0001 C CNN
+F 1 "GND" H 7655 7477 50  0000 C CNN
+F 2 "" H 7650 7650 60  0000 C CNN
+F 3 "" H 7650 7650 60  0000 C CNN
+	1    7650 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D7
+U 1 1 5CEBBCC0
+P 7650 7500
+F 0 "D7" V 7604 7579 50  0000 L CNN
+F 1 "SS54" V 7695 7579 50  0000 L CNN
+F 2 "PCB:SS54" H 7650 7500 50  0001 C CNN
+F 3 "~" H 7650 7500 50  0001 C CNN
+	1    7650 7500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7500 7350 7650 7350
+$Comp
+L Device:L L2
+U 1 1 5CEC5049
+P 7950 7350
+F 0 "L2" V 8050 7350 50  0000 C CNN
+F 1 "33uH" V 7900 7350 50  0000 C CNN
+F 2 "PCB:SRR1806-330M" H 7950 7350 50  0001 C CNN
+F 3 "~" H 7950 7350 50  0001 C CNN
+	1    7950 7350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C28
+U 1 1 5CEC5D60
+P 8300 7500
+F 0 "C28" H 8415 7546 50  0000 L CNN
+F 1 "470uF" H 8415 7455 50  0000 L CNN
+F 2 "PCB:MVG25WV470M" H 8338 7350 50  0001 C CNN
+F 3 "~" H 8300 7500 50  0001 C CNN
+	1    8300 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0139
+U 1 1 5CEC653F
+P 8300 7650
+F 0 "#PWR0139" H 8300 7400 50  0001 C CNN
+F 1 "GND" H 8305 7477 50  0000 C CNN
+F 2 "" H 8300 7650 60  0000 C CNN
+F 3 "" H 8300 7650 60  0000 C CNN
+	1    8300 7650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 7350 8300 7350
+Wire Wire Line
+	7800 7350 7650 7350
+Connection ~ 7650 7350
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0140
+U 1 1 5CED4AF4
+P 8750 6700
+F 0 "#PWR0140" H 8750 6450 50  0001 C CNN
+F 1 "GND" H 8755 6527 50  0000 C CNN
+F 2 "" H 8750 6700 60  0000 C CNN
+F 3 "" H 8750 6700 60  0000 C CNN
+	1    8750 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 6400 8750 6400
+Connection ~ 8300 6400
+Wire Wire Line
+	8750 6200 8750 6400
+Wire Wire Line
+	7500 6200 8750 6200
+Connection ~ 8750 6400
+Connection ~ 8750 6200
+$Comp
+L Device:C C30
+U 1 1 5CEDC7CC
+P 8750 7500
+F 0 "C30" H 8865 7546 50  0000 L CNN
+F 1 "0.1uF" H 8865 7455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8788 7350 50  0001 C CNN
+F 3 "~" H 8750 7500 50  0001 C CNN
+	1    8750 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0141
+U 1 1 5CEDD0B1
+P 8750 7650
+F 0 "#PWR0141" H 8750 7400 50  0001 C CNN
+F 1 "GND" H 8755 7477 50  0000 C CNN
+F 2 "" H 8750 7650 60  0000 C CNN
+F 3 "" H 8750 7650 60  0000 C CNN
+	1    8750 7650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 7350 8750 7350
+Connection ~ 8300 7350
+Wire Wire Line
+	8750 7150 8750 7350
+Wire Wire Line
+	7500 7150 8750 7150
+Connection ~ 8750 7350
+$Comp
+L STM32F4개발보드-rescue:+5V-nixie-cache #PWR0142
+U 1 1 5CEE22C0
+P 8750 7150
+F 0 "#PWR0142" H 8750 7000 50  0001 C CNN
+F 1 "+5V" H 8765 7323 50  0000 C CNN
+F 2 "" H 8750 7150 60  0000 C CNN
+F 3 "" H 8750 7150 60  0000 C CNN
+	1    8750 7150
+	1    0    0    -1  
+$EndComp
+Connection ~ 8750 7150
+$Comp
+L Device:C C23
+U 1 1 5CEE8A31
+P 7450 5500
+F 0 "C23" H 7565 5546 50  0000 L CNN
+F 1 "470uF" H 7565 5455 50  0000 L CNN
+F 2 "PCB:MVG25WV470M" H 7488 5350 50  0001 C CNN
+F 3 "~" H 7450 5500 50  0001 C CNN
+	1    7450 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Barrel_Jack_Switch J10
+U 1 1 5CEEA4F7
+P 6850 5450
+F 0 "J10" H 6700 5650 50  0000 C CNN
+F 1 "VIN 12VDC" H 6850 5250 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 6900 5410 50  0001 C CNN
+F 3 "~" H 6900 5410 50  0001 C CNN
+	1    6850 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C26
+U 1 1 5CEEDDC3
+P 7900 5500
+F 0 "C26" H 8015 5546 50  0000 L CNN
+F 1 "0.1uF" H 8015 5455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7938 5350 50  0001 C CNN
+F 3 "~" H 7900 5500 50  0001 C CNN
+	1    7900 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 5350 7900 5350
+$Comp
+L STM32F4개발보드-rescue:+12V-DS3231SN #PWR0143
+U 1 1 5CEF7490
+P 4550 7650
+F 0 "#PWR0143" H 4550 7500 50  0001 C CNN
+F 1 "+12V" H 4565 7823 50  0000 C CNN
+F 2 "" H 4550 7650 60  0000 C CNN
+F 3 "" H 4550 7650 60  0000 C CNN
+	1    4550 7650
+	0    1    1    0   
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0144
+U 1 1 5CEF80DA
+P 7450 5650
+F 0 "#PWR0144" H 7450 5400 50  0001 C CNN
+F 1 "GND" H 7455 5477 50  0000 C CNN
+F 2 "" H 7450 5650 60  0000 C CNN
+F 3 "" H 7450 5650 60  0000 C CNN
+	1    7450 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0145
+U 1 1 5CEF8700
+P 7900 5650
+F 0 "#PWR0145" H 7900 5400 50  0001 C CNN
+F 1 "GND" H 7905 5477 50  0000 C CNN
+F 2 "" H 7900 5650 60  0000 C CNN
+F 3 "" H 7900 5650 60  0000 C CNN
+	1    7900 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0146
+U 1 1 5CEF8BA4
+P 7150 5550
+F 0 "#PWR0146" H 7150 5300 50  0001 C CNN
+F 1 "GND" H 7155 5377 50  0000 C CNN
+F 2 "" H 7150 5550 60  0000 C CNN
+F 3 "" H 7150 5550 60  0000 C CNN
+	1    7150 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 5550 7150 5450
+Connection ~ 7150 5550
+Text Notes 4900 4900 0    157  ~ 0
+Power
+$Comp
+L Connector:TestPoint TP13
+U 1 1 5CEFA542
+P 10700 4800
+F 0 "TP13" V 10750 4950 28  0000 C CNN
+F 1 "Clock" V 10650 4850 28  0000 C CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm" H 10900 4800 50  0001 C CNN
+F 3 "~" H 10900 4800 50  0001 C CNN
+	1    10700 4800
+	0    -1   -1   0   
+$EndComp
+Text GLabel 10700 4800 2    50   Input ~ 0
+RCC_OSC_IN
+$Comp
+L Device:Fuse F1
+U 1 1 5CF0BFBD
+P 8150 5350
+F 0 "F1" V 7953 5350 50  0000 C CNN
+F 1 "2.5A" V 8044 5350 50  0000 C CNN
+F 2 "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder" V 8080 5350 50  0001 C CNN
+F 3 "~" H 8150 5350 50  0001 C CNN
+	1    8150 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8300 5350 8400 5350
+Wire Wire Line
+	8000 5350 7900 5350
+Connection ~ 7900 5350
+$Comp
+L power:GND #PWR0148
+U 1 1 5CF1E3A4
+P 8900 4450
+F 0 "#PWR0148" H 8900 4200 50  0001 C CNN
+F 1 "GND" V 8905 4322 50  0000 R CNN
+F 2 "" H 8900 4450 50  0001 C CNN
+F 3 "" H 8900 4450 50  0001 C CNN
+	1    8900 4450
+	0    1    1    0   
+$EndComp
+Text GLabel 8750 4250 0    50   Input ~ 0
+BOOT0
+$Comp
+L Switch:SW_DIP_x02 SW4
+U 1 1 5CF427AC
+P 7900 4350
+F 0 "SW4" H 7900 4600 50  0000 C CNN
+F 1 "Reset" H 8100 4100 50  0000 C CNN
+F 2 "PCB:SW_SMD_IT-1107" H 7900 4350 50  0001 C CNN
+F 3 "~" H 7900 4350 50  0001 C CNN
+	1    7900 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5CF4702D
+P 7500 4100
+F 0 "R11" H 7570 4146 50  0000 L CNN
+F 1 "10k" H 7570 4055 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7430 4100 50  0001 C CNN
+F 3 "~" H 7500 4100 50  0001 C CNN
+	1    7500 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C25
+U 1 1 5CF4974A
+P 7900 4550
+F 0 "C25" V 7850 4400 50  0000 L CNN
+F 1 "0.1uF" V 8000 4300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7938 4400 50  0001 C CNN
+F 3 "~" H 7900 4550 50  0001 C CNN
+	1    7900 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0149
+U 1 1 5CF56E73
+P 8200 4250
+F 0 "#PWR0149" H 8200 4000 50  0001 C CNN
+F 1 "GND" V 8205 4122 50  0000 R CNN
+F 2 "" H 8200 4250 50  0001 C CNN
+F 3 "" H 8200 4250 50  0001 C CNN
+	1    8200 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7750 4550 7500 4550
+Wire Wire Line
+	7500 4550 7500 4350
+Wire Wire Line
+	8200 4250 8200 4350
+Connection ~ 8200 4250
+Wire Wire Line
+	8200 4350 8200 4550
+Wire Wire Line
+	8200 4550 8050 4550
+Connection ~ 8200 4350
+Wire Wire Line
+	7600 4350 7500 4350
+Text GLabel 7500 4350 0    50   Input ~ 0
+Reset
+Wire Notes Line
+	7200 3700 7200 4700
+Wire Wire Line
+	7500 4350 7500 4250
+Connection ~ 7500 4350
+Wire Wire Line
+	7500 4250 7600 4250
+Connection ~ 7500 4250
+Text Notes 7250 3850 0    79   ~ 0
+Reset
+Wire Wire Line
+	7500 3950 7750 3950
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J9
+U 1 1 5CF8E562
+P 6500 4100
+F 0 "J9" V 6504 4580 50  0000 L CNN
+F 1 "ST-LINK" V 6595 4580 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x10_P2.54mm_Vertical" H 6500 4100 50  0001 C CNN
+F 3 "~" H 6500 4100 50  0001 C CNN
+	1    6500 4100
+	0    -1   1    0   
+$EndComp
+Text GLabel 6100 3900 0    50   Input ~ 0
+3.3VDDC
+Text GLabel 6100 4400 0    50   Input ~ 0
+3.3VDDC
+Text GLabel 6800 4400 3    50   Input ~ 0
+Reset
+Wire Wire Line
+	6200 3900 6200 3800
+Wire Wire Line
+	6200 3800 6300 3800
+Wire Wire Line
+	6300 3800 6300 3900
+Wire Wire Line
+	6300 3800 6400 3800
+Wire Wire Line
+	6400 3800 6400 3900
+Connection ~ 6300 3800
+Wire Wire Line
+	6400 3800 6500 3800
+Wire Wire Line
+	6500 3800 6500 3900
+Connection ~ 6400 3800
+Wire Wire Line
+	6500 3800 6600 3800
+Wire Wire Line
+	6600 3800 6600 3900
+Connection ~ 6500 3800
+Wire Wire Line
+	6600 3800 6700 3800
+Wire Wire Line
+	7000 3800 7000 3900
+Connection ~ 6600 3800
+Wire Wire Line
+	6900 3900 6900 3800
+Connection ~ 6900 3800
+Wire Wire Line
+	6900 3800 7000 3800
+Wire Wire Line
+	6800 3900 6800 3800
+Connection ~ 6800 3800
+Wire Wire Line
+	6800 3800 6900 3800
+Wire Wire Line
+	6700 3900 6700 3800
+Connection ~ 6700 3800
+Wire Wire Line
+	6700 3800 6800 3800
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0151
+U 1 1 5CFB2F21
+P 7000 3800
+F 0 "#PWR0151" H 7000 3550 50  0001 C CNN
+F 1 "GND" H 7000 3650 50  0000 C CNN
+F 2 "" H 7000 3800 60  0000 C CNN
+F 3 "" H 7000 3800 60  0000 C CNN
+	1    7000 3800
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7000 3800
+Text GLabel 6400 4400 3    50   Input ~ 0
+SWDIO
+Text GLabel 6500 4400 3    50   Input ~ 0
+SWCLK
+Text GLabel 6700 4400 3    50   Input ~ 0
+SWO
+Wire Notes Line
+	5550 3700 8300 3700
+Text Notes 5825 3825 2    79   ~ 0
+SWD
+Text GLabel 11050 2175 2    50   Input ~ 0
+PB11
+Text GLabel 11050 2475 2    50   Input ~ 0
+PC5
+Text GLabel 11050 1975 2    50   Input ~ 0
+PA1
+Text GLabel 11050 2075 2    50   Input ~ 0
+PC4
+Text GLabel 11050 1875 2    50   Input ~ 0
+PA2
+Text GLabel 11050 2275 2    50   Input ~ 0
+PB13
+Text GLabel 11050 2375 2    50   Input ~ 0
+PB12
+Text GLabel 11050 2675 2    50   Input ~ 0
+PC1
+Text GLabel 11050 2575 2    50   Input ~ 0
+PA7
+Text GLabel 10150 1050 3    50   Input ~ 0
+PD15
+Text GLabel 10050 1050 3    50   Input ~ 0
+PG2
+Text GLabel 9950 1050 3    50   Input ~ 0
+PG3
+Text GLabel 9850 1050 3    50   Input ~ 0
+PG4
+Text GLabel 9350 1050 3    50   Input ~ 0
+PG5
+Text GLabel 9150 1050 3    50   Input ~ 0
+PG6
+Text GLabel 8575 3575 0    50   Input ~ 0
+PD2
+Text GLabel 8575 3275 0    50   Input ~ 0
+PC10
+Text GLabel 8575 3375 0    50   Input ~ 0
+PC11
+Text GLabel 8575 3175 0    50   Input ~ 0
+PC9
+Text GLabel 8575 3675 0    50   Input ~ 0
+PC8
+Text GLabel 8575 3475 0    50   Input ~ 0
+PC12
+Text GLabel 9650 4375 0    50   Input ~ 0
+PB6
+Text GLabel 9650 4475 0    50   Input ~ 0
+PB7
+Text GLabel 8575 3075 0    50   Input ~ 0
+PD1
+Text GLabel 9650 4275 0    50   Input ~ 0
+PF5
+$Comp
+L Switch:SW_DIP_x02 SW1
+U 1 1 5CF32FE7
+P 5500 3000
+F 0 "SW1" H 5500 3250 50  0000 C CNN
+F 1 "IT-1107(PA0)" H 5700 2750 50  0000 C CNN
+F 2 "PCB:SW_SMD_IT-1107" H 5500 3000 50  0001 C CNN
+F 3 "~" H 5500 3000 50  0001 C CNN
+	1    5500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5CF32FED
+P 5100 2750
+F 0 "R7" H 5170 2796 50  0000 L CNN
+F 1 "10k" H 5170 2705 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5030 2750 50  0001 C CNN
+F 3 "~" H 5100 2750 50  0001 C CNN
+	1    5100 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C21
+U 1 1 5CF32FF3
+P 5500 3200
+F 0 "C21" V 5450 3050 50  0000 L CNN
+F 1 "0.1uF" V 5600 2950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5538 3050 50  0001 C CNN
+F 3 "~" H 5500 3200 50  0001 C CNN
+	1    5500 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0152
+U 1 1 5CF32FF9
+P 5800 2900
+F 0 "#PWR0152" H 5800 2650 50  0001 C CNN
+F 1 "GND" V 5805 2772 50  0000 R CNN
+F 2 "" H 5800 2900 50  0001 C CNN
+F 3 "" H 5800 2900 50  0001 C CNN
+	1    5800 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5350 3200 5100 3200
+Wire Wire Line
+	5100 3200 5100 3000
+Wire Wire Line
+	5800 2900 5800 3000
+Connection ~ 5800 2900
+Wire Wire Line
+	5800 3000 5800 3200
+Wire Wire Line
+	5800 3200 5650 3200
+Connection ~ 5800 3000
+Wire Wire Line
+	5200 3000 5100 3000
+Wire Wire Line
+	5100 3000 5100 2900
+Connection ~ 5100 3000
+Wire Wire Line
+	5100 2900 5200 2900
+Connection ~ 5100 2900
+Wire Wire Line
+	5100 2600 5350 2600
+$Comp
+L Switch:SW_DIP_x02 SW2
+U 1 1 5CF561D1
+P 6300 3250
+F 0 "SW2" H 6300 3500 50  0000 C CNN
+F 1 "IT-1107(PB2)" H 6500 3000 50  0000 C CNN
+F 2 "PCB:SW_SMD_IT-1107" H 6300 3250 50  0001 C CNN
+F 3 "~" H 6300 3250 50  0001 C CNN
+	1    6300 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5CF561D7
+P 5900 3000
+F 0 "R9" H 5970 3046 50  0000 L CNN
+F 1 "10k" H 5970 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5830 3000 50  0001 C CNN
+F 3 "~" H 5900 3000 50  0001 C CNN
+	1    5900 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C22
+U 1 1 5CF561DD
+P 6300 3450
+F 0 "C22" V 6250 3300 50  0000 L CNN
+F 1 "0.1uF" V 6400 3200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6338 3300 50  0001 C CNN
+F 3 "~" H 6300 3450 50  0001 C CNN
+	1    6300 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0154
+U 1 1 5CF561E3
+P 6600 3150
+F 0 "#PWR0154" H 6600 2900 50  0001 C CNN
+F 1 "GND" V 6605 3022 50  0000 R CNN
+F 2 "" H 6600 3150 50  0001 C CNN
+F 3 "" H 6600 3150 50  0001 C CNN
+	1    6600 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6150 3450 5900 3450
+Wire Wire Line
+	5900 3450 5900 3250
+Wire Wire Line
+	6600 3150 6600 3250
+Connection ~ 6600 3150
+Wire Wire Line
+	6600 3250 6600 3450
+Wire Wire Line
+	6600 3450 6450 3450
+Connection ~ 6600 3250
+Wire Wire Line
+	6000 3250 5900 3250
+Wire Wire Line
+	5900 3250 5900 3150
+Connection ~ 5900 3250
+Wire Wire Line
+	5900 3150 6000 3150
+Connection ~ 5900 3150
+Wire Wire Line
+	5900 2850 6150 2850
+$Comp
+L Switch:SW_DIP_x02 SW3
+U 1 1 5CF5DDF1
+P 7150 3250
+F 0 "SW3" H 7150 3500 50  0000 C CNN
+F 1 "IT-1107(PA3)" H 7350 3000 50  0000 C CNN
+F 2 "PCB:SW_SMD_IT-1107" H 7150 3250 50  0001 C CNN
+F 3 "~" H 7150 3250 50  0001 C CNN
+	1    7150 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5CF5DDF7
+P 6750 3000
+F 0 "R10" H 6820 3046 50  0000 L CNN
+F 1 "10k" H 6820 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6680 3000 50  0001 C CNN
+F 3 "~" H 6750 3000 50  0001 C CNN
+	1    6750 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C24
+U 1 1 5CF5DDFD
+P 7150 3450
+F 0 "C24" V 7100 3300 50  0000 L CNN
+F 1 "0.1uF" V 7250 3200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7188 3300 50  0001 C CNN
+F 3 "~" H 7150 3450 50  0001 C CNN
+	1    7150 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0156
+U 1 1 5CF5DE03
+P 7450 3150
+F 0 "#PWR0156" H 7450 2900 50  0001 C CNN
+F 1 "GND" V 7455 3022 50  0000 R CNN
+F 2 "" H 7450 3150 50  0001 C CNN
+F 3 "" H 7450 3150 50  0001 C CNN
+	1    7450 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7000 3450 6750 3450
+Wire Wire Line
+	6750 3450 6750 3250
+Wire Wire Line
+	7450 3150 7450 3250
+Connection ~ 7450 3150
+Wire Wire Line
+	7450 3250 7450 3450
+Wire Wire Line
+	7450 3450 7300 3450
+Connection ~ 7450 3250
+Wire Wire Line
+	6850 3250 6750 3250
+Wire Wire Line
+	6750 3250 6750 3150
+Connection ~ 6750 3250
+Wire Wire Line
+	6750 3150 6850 3150
+Connection ~ 6750 3150
+Wire Wire Line
+	6750 2850 7000 2850
+Wire Notes Line
+	5550 2400 8300 2400
+Text GLabel 5100 3200 3    50   Input ~ 0
+PA0
+Text GLabel 5900 3450 3    50   Input ~ 0
+PB2
+Text GLabel 6750 3450 3    50   Input ~ 0
+PA3
+Wire Notes Line
+	9750 5250 9750 4700
+Text Notes 8325 4075 0    50   ~ 0
+BOOT\nMode
+$Comp
+L Device:R_POT RV1
+U 1 1 5CF8A2CC
+P 6200 2000
+F 0 "RV1" V 6100 2000 50  0000 C CNN
+F 1 "10k(PB1)" V 6300 2100 50  0000 C CNN
+F 2 "PCB:RV09H20SQ-B10K" H 6200 2000 50  0001 C CNN
+F 3 "~" H 6200 2000 50  0001 C CNN
+	1    6200 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT RV2
+U 1 1 5CF8C0B2
+P 6650 2000
+F 0 "RV2" V 6550 2000 50  0000 C CNN
+F 1 "10k(PC0)" V 6750 2100 50  0000 C CNN
+F 2 "PCB:RV09H20SQ-B10K" H 6650 2000 50  0001 C CNN
+F 3 "~" H 6650 2000 50  0001 C CNN
+	1    6650 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT RV3
+U 1 1 5CF8C5D9
+P 7100 2000
+F 0 "RV3" V 7000 2000 50  0000 C CNN
+F 1 "10k(PC2)" V 7200 2100 50  0000 C CNN
+F 2 "PCB:RV09H20SQ-B10K" H 7100 2000 50  0001 C CNN
+F 3 "~" H 7100 2000 50  0001 C CNN
+	1    7100 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5CF90CDC
+P 7600 2100
+F 0 "R12" V 7500 2100 50  0000 C CNN
+F 1 "10k" V 7700 2100 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7530 2100 50  0001 C CNN
+F 3 "~" H 7600 2100 50  0001 C CNN
+	1    7600 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 2000 6050 1800
+Wire Wire Line
+	6050 1800 6500 1800
+Wire Wire Line
+	6500 1800 6500 2000
+Wire Wire Line
+	6500 1800 6950 1800
+Wire Wire Line
+	6950 1800 6950 2000
+Connection ~ 6500 1800
+Wire Wire Line
+	6350 2000 6350 1850
+Wire Wire Line
+	6350 1850 6800 1850
+Wire Wire Line
+	6800 1850 6800 2000
+Wire Wire Line
+	6800 1850 7250 1850
+Wire Wire Line
+	7250 1850 7250 2000
+Connection ~ 6800 1850
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0159
+U 1 1 5CFB4A4F
+P 7250 1725
+F 0 "#PWR0159" H 7250 1475 50  0001 C CNN
+F 1 "GND" H 7255 1552 50  0000 C CNN
+F 2 "" H 7250 1725 60  0000 C CNN
+F 3 "" H 7250 1725 60  0000 C CNN
+	1    7250 1725
+	-1   0    0    1   
+$EndComp
+Text GLabel 6200 2150 3    50   Input ~ 0
+PB1
+Text GLabel 6650 2150 3    50   Input ~ 0
+PC0
+Text GLabel 7100 2150 3    50   Input ~ 0
+PC2
+Text GLabel 7800 2100 3    50   Input ~ 0
+PF10
+$Comp
+L Device:RTRIM R15
+U 1 1 5CFD92B0
+P 8000 2100
+F 0 "R15" V 8100 2100 50  0000 C CNN
+F 1 "CDS(PF10)" V 7900 2100 50  0000 C CNN
+F 2 "OptoDevice:R_LDR_4.9x4.2mm_P2.54mm_Vertical" V 7930 2100 50  0001 C CNN
+F 3 "~" H 8000 2100 50  0001 C CNN
+	1    8000 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0160
+U 1 1 5CFDDE2A
+P 8150 2100
+F 0 "#PWR0160" H 8150 1850 50  0001 C CNN
+F 1 "GND" H 8155 1927 50  0000 C CNN
+F 2 "" H 8150 2100 60  0000 C CNN
+F 3 "" H 8150 2100 60  0000 C CNN
+	1    8150 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 2100 7850 2100
+Text Notes 5600 1550 0    118  ~ 0
+Analog
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0163
+U 1 1 5D02B515
+P 6100 1200
+F 0 "#PWR0163" H 6100 950 50  0001 C CNN
+F 1 "GND" H 6105 1027 50  0000 C CNN
+F 2 "" H 6100 1200 60  0000 C CNN
+F 3 "" H 6100 1200 60  0000 C CNN
+	1    6100 1200
+	1    0    0    -1  
+$EndComp
+Text GLabel 6500 800  2    50   Input ~ 0
+SDA
+Text GLabel 6500 900  2    50   Input ~ 0
+SCL
+$Comp
+L Device:R R13
+U 1 1 5D04654F
+P 7800 1050
+F 0 "R13" H 7800 850 50  0000 C CNN
+F 1 "4.7k" H 7900 1350 29  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7730 1050 50  0001 C CNN
+F 3 "~" H 7800 1050 50  0001 C CNN
+	1    7800 1050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0164
+U 1 1 5CEF0D05
+P 6500 1000
+F 0 "#PWR0164" H 6500 750 50  0001 C CNN
+F 1 "GND" V 6505 872 50  0000 R CNN
+F 2 "" H 6500 1000 50  0001 C CNN
+F 3 "" H 6500 1000 50  0001 C CNN
+	1    6500 1000
+	1    0    0    -1  
+$EndComp
+Text GLabel 5700 800  0    50   Input ~ 0
+A0
+Text GLabel 5700 900  0    50   Input ~ 0
+A1
+Text GLabel 5700 1000 0    50   Input ~ 0
+A2
+Text GLabel 7050 700  2    50   Input ~ 0
+A0
+Text GLabel 6850 1100 1    50   Input ~ 0
+A1
+Text GLabel 7500 1100 2    50   Input ~ 0
+A2
+Text GLabel 8100 550  2    50   Input ~ 0
+SCL
+Text GLabel 8100 650  2    50   Input ~ 0
+SDA
+$Comp
+L Memory_EEPROM:24LC64 U2
+U 1 1 5D0220C9
+P 6100 900
+F 0 "U2" H 5900 1150 50  0000 C CNN
+F 1 "AT24C64" H 6300 650 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6100 900 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21189f.pdf" H 6100 900 50  0001 C CNN
+	1    6100 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5CF12C25
+P 8000 1050
+F 0 "R14" H 8000 850 50  0000 C CNN
+F 1 "4.7k" H 7900 1350 29  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7930 1050 50  0001 C CNN
+F 3 "~" H 8000 1050 50  0001 C CNN
+	1    8000 1050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8000 900  7800 900 
+Text GLabel 8000 1200 3    50   Input ~ 0
+SDA
+Text GLabel 7800 1200 3    50   Input ~ 0
+SCL
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0169
+U 1 1 5CF38E8F
+P 7050 1250
+F 0 "#PWR0169" H 7050 1000 50  0001 C CNN
+F 1 "GND" H 7055 1077 50  0000 C CNN
+F 2 "" H 7050 1250 60  0000 C CNN
+F 3 "" H 7050 1250 60  0000 C CNN
+	1    7050 1250
+	-1   0    0    1   
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0170
+U 1 1 5CF396C6
+P 7350 1300
+F 0 "#PWR0170" H 7350 1050 50  0001 C CNN
+F 1 "GND" H 7355 1127 50  0000 C CNN
+F 2 "" H 7350 1300 60  0000 C CNN
+F 3 "" H 7350 1300 60  0000 C CNN
+	1    7350 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0171
+U 1 1 5CF39D6A
+P 6900 900
+F 0 "#PWR0171" H 6900 650 50  0001 C CNN
+F 1 "GND" H 6905 727 50  0000 C CNN
+F 2 "" H 6900 900 60  0000 C CNN
+F 3 "" H 6900 900 60  0000 C CNN
+	1    6900 900 
+	0    -1   -1   0   
+$EndComp
+Text GLabel 7600 550  0    50   Input ~ 0
+PB6
+Text GLabel 7600 650  0    50   Input ~ 0
+PB7
+Text Notes 5550 550  0    79   ~ 0
+EEPROM
+Wire Wire Line
+	6100 550  6100 600 
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J11
+U 1 1 5CF85ED3
+P 7600 4850
+F 0 "J11" H 7650 4950 50  0000 C CNN
+F 1 "GND" H 7650 4650 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Vertical" H 7600 4850 50  0001 C CNN
+F 3 "~" H 7600 4850 50  0001 C CNN
+	1    7600 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J6
+U 1 1 5CF864DF
+P 5150 6450
+F 0 "J6" H 5200 6550 50  0000 C CNN
+F 1 "3.3V" H 5200 6250 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Vertical" H 5150 6450 50  0001 C CNN
+F 3 "~" H 5150 6450 50  0001 C CNN
+	1    5150 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0172
+U 1 1 5CF8C9EE
+P 7300 4950
+F 0 "#PWR0172" H 7300 4700 50  0001 C CNN
+F 1 "GND" H 7305 4777 50  0000 C CNN
+F 2 "" H 7300 4950 60  0000 C CNN
+F 3 "" H 7300 4950 60  0000 C CNN
+	1    7300 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 4950 7400 4950
+Wire Wire Line
+	7300 4950 7300 4850
+Wire Wire Line
+	7300 4850 7400 4850
+Connection ~ 7300 4950
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0173
+U 1 1 5CFA379F
+P 8000 4950
+F 0 "#PWR0173" H 8000 4700 50  0001 C CNN
+F 1 "GND" H 8005 4777 50  0000 C CNN
+F 2 "" H 8000 4950 60  0000 C CNN
+F 3 "" H 8000 4950 60  0000 C CNN
+	1    8000 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 4950 8000 4950
+Wire Wire Line
+	7900 4850 8000 4850
+Wire Wire Line
+	8000 4850 8000 4950
+Connection ~ 8000 4950
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J13
+U 1 1 5CFD38A0
+P 8900 5250
+F 0 "J13" H 8950 5350 50  0000 C CNN
+F 1 "GND" H 8950 5050 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Vertical" H 8900 5250 50  0001 C CNN
+F 3 "~" H 8900 5250 50  0001 C CNN
+	1    8900 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0174
+U 1 1 5CFD38A6
+P 8600 5350
+F 0 "#PWR0174" H 8600 5100 50  0001 C CNN
+F 1 "GND" H 8605 5177 50  0000 C CNN
+F 2 "" H 8600 5350 60  0000 C CNN
+F 3 "" H 8600 5350 60  0000 C CNN
+	1    8600 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 5350 8700 5350
+Wire Wire Line
+	8600 5350 8600 5250
+Wire Wire Line
+	8600 5250 8700 5250
+Connection ~ 8600 5350
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0175
+U 1 1 5CFD38B0
+P 9300 5350
+F 0 "#PWR0175" H 9300 5100 50  0001 C CNN
+F 1 "GND" H 9305 5177 50  0000 C CNN
+F 2 "" H 9300 5350 60  0000 C CNN
+F 3 "" H 9300 5350 60  0000 C CNN
+	1    9300 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 5350 9300 5350
+Wire Wire Line
+	9200 5250 9300 5250
+Wire Wire Line
+	9300 5250 9300 5350
+Connection ~ 9300 5350
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J12
+U 1 1 5CFDB37C
+P 8900 4850
+F 0 "J12" H 8950 4950 50  0000 C CNN
+F 1 "GND" H 8950 4650 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Vertical" H 8900 4850 50  0001 C CNN
+F 3 "~" H 8900 4850 50  0001 C CNN
+	1    8900 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0176
+U 1 1 5CFDB382
+P 8600 4950
+F 0 "#PWR0176" H 8600 4700 50  0001 C CNN
+F 1 "GND" H 8605 4777 50  0000 C CNN
+F 2 "" H 8600 4950 60  0000 C CNN
+F 3 "" H 8600 4950 60  0000 C CNN
+	1    8600 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 4950 8700 4950
+Wire Wire Line
+	8600 4950 8600 4850
+Wire Wire Line
+	8600 4850 8700 4850
+Connection ~ 8600 4950
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0177
+U 1 1 5CFDB38C
+P 9300 4950
+F 0 "#PWR0177" H 9300 4700 50  0001 C CNN
+F 1 "GND" H 9305 4777 50  0000 C CNN
+F 2 "" H 9300 4950 60  0000 C CNN
+F 3 "" H 9300 4950 60  0000 C CNN
+	1    9300 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 4950 9300 4950
+Wire Wire Line
+	9200 4850 9300 4850
+Wire Wire Line
+	9300 4850 9300 4950
+Connection ~ 9300 4950
+Wire Wire Line
+	5450 7500 5450 7600
+Wire Wire Line
+	4950 7500 4950 7600
+Wire Wire Line
+	5450 6950 5450 7050
+Wire Wire Line
+	4950 6950 4950 7050
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J8
+U 1 1 5CF858C9
+P 5150 7500
+F 0 "J8" H 5200 7600 50  0000 C CNN
+F 1 "12V(VIN)" H 5200 7300 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Vertical" H 5150 7500 50  0001 C CNN
+F 3 "~" H 5150 7500 50  0001 C CNN
+	1    5150 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 6450 5450 6550
+Wire Wire Line
+	4950 6450 4950 6550
+$Comp
+L power:+3.3V #PWR0178
+U 1 1 5D100AC2
+P 10450 6400
+F 0 "#PWR0178" H 10450 6250 50  0001 C CNN
+F 1 "+3.3V" H 10465 6573 50  0000 C CNN
+F 2 "" H 10450 6400 50  0001 C CNN
+F 3 "" H 10450 6400 50  0001 C CNN
+	1    10450 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C42
+U 1 1 5D100ACE
+P 10450 6650
+F 0 "C42" H 10565 6696 50  0000 L CNN
+F 1 "0.1uF" H 10565 6605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10488 6500 50  0001 C CNN
+F 3 "~" H 10450 6650 50  0001 C CNN
+	1    10450 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C46
+U 1 1 5D100AD4
+P 10950 6650
+F 0 "C46" H 11065 6696 50  0000 L CNN
+F 1 "0.1uF" H 11065 6605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10988 6500 50  0001 C CNN
+F 3 "~" H 10950 6650 50  0001 C CNN
+	1    10950 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 6500 10950 6500
+Wire Wire Line
+	10550 6500 10450 6500
+Connection ~ 10450 6500
+Wire Wire Line
+	10450 6500 10450 6400
+Connection ~ 10700 6800
+Wire Wire Line
+	10700 6800 10950 6800
+Wire Wire Line
+	10450 6800 10700 6800
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0179
+U 1 1 5D100AE2
+P 10700 6800
+F 0 "#PWR0179" H 10700 6550 50  0001 C CNN
+F 1 "GND" H 10705 6627 50  0000 C CNN
+F 2 "" H 10700 6800 60  0000 C CNN
+F 3 "" H 10700 6800 60  0000 C CNN
+	1    10700 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C36
+U 1 1 5D10C910
+P 9500 7450
+F 0 "C36" H 9615 7496 50  0000 L CNN
+F 1 "0.1uF" H 9615 7405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9538 7300 50  0001 C CNN
+F 3 "~" H 9500 7450 50  0001 C CNN
+	1    9500 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C39
+U 1 1 5D10C916
+P 10000 7450
+F 0 "C39" H 10115 7496 50  0000 L CNN
+F 1 "0.1uF" H 10115 7405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10038 7300 50  0001 C CNN
+F 3 "~" H 10000 7450 50  0001 C CNN
+	1    10000 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 7300 10000 7300
+Wire Wire Line
+	9600 7300 9500 7300
+Connection ~ 9500 7300
+Wire Wire Line
+	9500 7300 9500 7200
+Connection ~ 9750 7600
+Wire Wire Line
+	9750 7600 10000 7600
+Wire Wire Line
+	9500 7600 9750 7600
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0180
+U 1 1 5D10C924
+P 9750 7600
+F 0 "#PWR0180" H 9750 7350 50  0001 C CNN
+F 1 "GND" H 9755 7427 50  0000 C CNN
+F 2 "" H 9750 7600 60  0000 C CNN
+F 3 "" H 9750 7600 60  0000 C CNN
+	1    9750 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:+5V-nixie-cache #PWR0181
+U 1 1 5D11588E
+P 9500 7200
+F 0 "#PWR0181" H 9500 7050 50  0001 C CNN
+F 1 "+5V" H 9515 7373 50  0000 C CNN
+F 2 "" H 9500 7200 60  0000 C CNN
+F 3 "" H 9500 7200 60  0000 C CNN
+	1    9500 7200
+	1    0    0    -1  
+$EndComp
+Text GLabel 10000 7300 1    50   Input ~ 0
+5VOUT
+Text GLabel 10950 6500 1    50   Input ~ 0
+3.3VOUT
+$Comp
+L Device:C C43
+U 1 1 5D11B8AE
+P 10450 7450
+F 0 "C43" H 10565 7496 50  0000 L CNN
+F 1 "0.1uF" H 10565 7405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10488 7300 50  0001 C CNN
+F 3 "~" H 10450 7450 50  0001 C CNN
+	1    10450 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C47
+U 1 1 5D11B8B4
+P 10950 7450
+F 0 "C47" H 11065 7496 50  0000 L CNN
+F 1 "0.1uF" H 11065 7405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10988 7300 50  0001 C CNN
+F 3 "~" H 10950 7450 50  0001 C CNN
+	1    10950 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 7300 10950 7300
+Connection ~ 10450 7300
+Wire Wire Line
+	10450 7300 10450 7200
+Connection ~ 10700 7600
+Wire Wire Line
+	10700 7600 10950 7600
+Wire Wire Line
+	10450 7600 10700 7600
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0182
+U 1 1 5D11B8C1
+P 10700 7600
+F 0 "#PWR0182" H 10700 7350 50  0001 C CNN
+F 1 "GND" H 10705 7427 50  0000 C CNN
+F 2 "" H 10700 7600 60  0000 C CNN
+F 3 "" H 10700 7600 60  0000 C CNN
+	1    10700 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:+12V-DS3231SN #PWR0183
+U 1 1 5D125334
+P 10450 7200
+F 0 "#PWR0183" H 10450 7050 50  0001 C CNN
+F 1 "+12V" H 10465 7373 50  0000 C CNN
+F 2 "" H 10450 7200 60  0000 C CNN
+F 3 "" H 10450 7200 60  0000 C CNN
+	1    10450 7200
+	1    0    0    -1  
+$EndComp
+Text GLabel 10950 7300 1    50   Input ~ 0
+12VOUT
+Wire Notes Line
+	11300 250  11300 7900
+Text GLabel 5450 6950 1    50   Input ~ 0
+5VOUT
+Text GLabel 5450 7500 1    50   Input ~ 0
+12VOUT
+Text GLabel 5450 6450 1    50   Input ~ 0
+3.3VOUT
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J7
+U 1 1 5CF84B3F
+P 5150 6950
+F 0 "J7" H 5200 7050 50  0000 C CNN
+F 1 "5V" H 5200 6750 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Vertical" H 5150 6950 50  0001 C CNN
+F 3 "~" H 5150 6950 50  0001 C CNN
+	1    5150 6950
+	1    0    0    -1  
+$EndComp
+Text GLabel 4950 6950 1    50   Input ~ 0
+5VOUT
+Text GLabel 4950 7500 1    50   Input ~ 0
+12VOUT
+Text GLabel 4950 6450 1    50   Input ~ 0
+3.3VOUT
+$Comp
+L Device:C C31
+U 1 1 5D2F7855
+P 9000 5700
+F 0 "C31" V 8950 5550 50  0000 L CNN
+F 1 "330uF" V 9150 5600 50  0000 L CNN
+F 2 "PCB:c1" H 9038 5550 50  0001 C CNN
+F 3 "~" H 9000 5700 50  0001 C CNN
+	1    9000 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0184
+U 1 1 5D3030DB
+P 9250 5700
+F 0 "#PWR0184" H 9250 5450 50  0001 C CNN
+F 1 "GND" H 9255 5527 50  0000 C CNN
+F 2 "" H 9250 5700 60  0000 C CNN
+F 3 "" H 9250 5700 60  0000 C CNN
+	1    9250 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C33
+U 1 1 5D2F7A63
+P 9200 7500
+F 0 "C33" H 9100 7600 50  0000 L CNN
+F 1 "330uF" H 9250 7400 50  0000 L CNN
+F 2 "PCB:c1" H 9238 7350 50  0001 C CNN
+F 3 "~" H 9200 7500 50  0001 C CNN
+	1    9200 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0185
+U 1 1 5D30D6C1
+P 9200 7650
+F 0 "#PWR0185" H 9200 7400 50  0001 C CNN
+F 1 "GND" H 9205 7477 50  0000 C CNN
+F 2 "" H 9200 7650 60  0000 C CNN
+F 3 "" H 9200 7650 60  0000 C CNN
+	1    9200 7650
+	1    0    0    -1  
+$EndComp
+Text GLabel 9200 7350 1    50   Input ~ 0
+12VOUT
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0186
+U 1 1 5D2F8A7F
+P 9200 6800
+F 0 "#PWR0186" H 9200 6550 50  0001 C CNN
+F 1 "GND" H 9205 6627 50  0000 C CNN
+F 2 "" H 9200 6800 60  0000 C CNN
+F 3 "" H 9200 6800 60  0000 C CNN
+	1    9200 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C32
+U 1 1 5D2F642B
+P 9200 6650
+F 0 "C32" H 9100 6750 50  0000 L CNN
+F 1 "330uF" H 9200 6550 50  0000 L CNN
+F 2 "PCB:c1" H 9238 6500 50  0001 C CNN
+F 3 "~" H 9200 6650 50  0001 C CNN
+	1    9200 6650
+	1    0    0    -1  
+$EndComp
+Text GLabel 9200 6500 1    50   Input ~ 0
+5VOUT
+Wire Wire Line
+	9250 5700 9150 5700
+Text GLabel 8850 5700 0    50   Input ~ 0
+3.3VOUT
+Wire Notes Line
+	4900 4700 11300 4700
+$Comp
+L Device:LED D5
+U 1 1 5D4006FE
+P 6250 5900
+F 0 "D5" H 6250 6000 50  0000 C CNN
+F 1 "12V(VIN)" H 6150 5750 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6250 5900 50  0001 C CNN
+F 3 "~" H 6250 5900 50  0001 C CNN
+	1    6250 5900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0187
+U 1 1 5D402DC2
+P 6400 5900
+F 0 "#PWR0187" H 6400 5650 50  0001 C CNN
+F 1 "GND" H 6405 5727 50  0000 C CNN
+F 2 "" H 6400 5900 60  0000 C CNN
+F 3 "" H 6400 5900 60  0000 C CNN
+	1    6400 5900
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5D4198E6
+P 5950 5900
+F 0 "R8" V 6050 5900 50  0000 R CNN
+F 1 "27k" V 5850 6000 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5880 5900 50  0001 C CNN
+F 3 "~" H 5950 5900 50  0001 C CNN
+	1    5950 5900
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5D43062A
+P 5200 4450
+F 0 "D3" H 5193 4666 50  0000 C CNN
+F 1 "L1(PG13)" H 5250 4350 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5200 4450 50  0001 C CNN
+F 3 "~" H 5200 4450 50  0001 C CNN
+	1    5200 4450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5D4331FA
+P 4950 4300
+F 0 "R4" H 5020 4346 50  0000 L CNN
+F 1 "220" H 5020 4255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4880 4300 50  0001 C CNN
+F 3 "~" H 4950 4300 50  0001 C CNN
+	1    4950 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0188
+U 1 1 5D433F1F
+P 5450 4500
+F 0 "#PWR0188" H 5450 4250 50  0001 C CNN
+F 1 "GND" H 5450 4350 50  0000 C CNN
+F 2 "" H 5450 4500 60  0000 C CNN
+F 3 "" H 5450 4500 60  0000 C CNN
+	1    5450 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 4450 5450 4450
+Wire Wire Line
+	5450 4450 5450 4500
+Wire Wire Line
+	5050 4450 4950 4450
+Text GLabel 4950 4150 1    50   Input ~ 0
+PG13
+$Comp
+L Device:LED D2
+U 1 1 5D44FB11
+P 5200 3850
+F 0 "D2" H 5193 4066 50  0000 C CNN
+F 1 "L2(PG14)" H 5250 3750 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5200 3850 50  0001 C CNN
+F 3 "~" H 5200 3850 50  0001 C CNN
+	1    5200 3850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5D44FB17
+P 4950 3700
+F 0 "R3" H 5020 3746 50  0000 L CNN
+F 1 "220" H 5020 3655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4880 3700 50  0001 C CNN
+F 3 "~" H 4950 3700 50  0001 C CNN
+	1    4950 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0189
+U 1 1 5D44FB1D
+P 5450 3900
+F 0 "#PWR0189" H 5450 3650 50  0001 C CNN
+F 1 "GND" H 5450 3750 50  0000 C CNN
+F 2 "" H 5450 3900 60  0000 C CNN
+F 3 "" H 5450 3900 60  0000 C CNN
+	1    5450 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3850 5450 3850
+Wire Wire Line
+	5450 3850 5450 3900
+Wire Wire Line
+	5050 3850 4950 3850
+Text GLabel 5450 3600 3    50   Input ~ 0
+PG14
+Wire Wire Line
+	5450 3600 5450 3550
+Wire Wire Line
+	5450 3550 4950 3550
+Text Notes 4900 3500 0    118  ~ 0
+L
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0190
+U 1 1 5CF07B23
+P 6900 5050
+F 0 "#PWR0190" H 6900 4800 50  0001 C CNN
+F 1 "GND" H 6905 4877 50  0000 C CNN
+F 2 "" H 6900 5050 60  0000 C CNN
+F 3 "" H 6900 5050 60  0000 C CNN
+	1    6900 5050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP12
+U 1 1 5CF00206
+P 6900 5050
+F 0 "TP12" V 7000 5150 50  0000 C CNN
+F 1 "GND" V 6800 5100 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch7.62mm_Drill1.3mm" H 7100 5050 50  0001 C CNN
+F 3 "~" H 7100 5050 50  0001 C CNN
+	1    6900 5050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0191
+U 1 1 5D48C1FE
+P 5050 5250
+F 0 "#PWR0191" H 5050 5100 50  0001 C CNN
+F 1 "+3.3V" H 5065 5423 50  0000 C CNN
+F 2 "" H 5050 5250 50  0001 C CNN
+F 3 "" H 5050 5250 50  0001 C CNN
+	1    5050 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5D4747FD
+P 5050 5400
+F 0 "R5" V 5150 5400 50  0000 R CNN
+F 1 "1k" V 4950 5500 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4980 5400 50  0001 C CNN
+F 3 "~" H 5050 5400 50  0001 C CNN
+	1    5050 5400
+	1    0    0    1   
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0192
+U 1 1 5D4747F6
+P 5050 5850
+F 0 "#PWR0192" H 5050 5600 50  0001 C CNN
+F 1 "GND" H 5055 5677 50  0000 C CNN
+F 2 "" H 5050 5850 60  0000 C CNN
+F 3 "" H 5050 5850 60  0000 C CNN
+	1    5050 5850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5D4747F0
+P 5050 5700
+F 0 "D1" H 5050 5800 50  0000 C CNN
+F 1 "3.3V" H 5050 5600 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5050 5700 50  0001 C CNN
+F 3 "~" H 5050 5700 50  0001 C CNN
+	1    5050 5700
+	0    1    -1   0   
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:+5V-nixie-cache #PWR0193
+U 1 1 5D48DDF2
+P 5450 5250
+F 0 "#PWR0193" H 5450 5100 50  0001 C CNN
+F 1 "+5V" H 5465 5423 50  0000 C CNN
+F 2 "" H 5450 5250 60  0000 C CNN
+F 3 "" H 5450 5250 60  0000 C CNN
+	1    5450 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5D47F941
+P 5450 5400
+F 0 "R6" V 5550 5400 50  0000 R CNN
+F 1 "10k" V 5350 5500 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5380 5400 50  0001 C CNN
+F 3 "~" H 5450 5400 50  0001 C CNN
+	1    5450 5400
+	1    0    0    1   
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0194
+U 1 1 5D47F93A
+P 5450 5850
+F 0 "#PWR0194" H 5450 5600 50  0001 C CNN
+F 1 "GND" H 5455 5677 50  0000 C CNN
+F 2 "" H 5450 5850 60  0000 C CNN
+F 3 "" H 5450 5850 60  0000 C CNN
+	1    5450 5850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5D47F934
+P 5450 5700
+F 0 "D4" H 5450 5800 50  0000 C CNN
+F 1 "5V" H 5450 5600 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5450 5700 50  0001 C CNN
+F 3 "~" H 5450 5700 50  0001 C CNN
+	1    5450 5700
+	0    1    -1   0   
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0195
+U 1 1 5CEDA9E6
+P 6500 5600
+F 0 "#PWR0195" H 6500 5350 50  0001 C CNN
+F 1 "GND" H 6505 5427 50  0000 C CNN
+F 2 "" H 6500 5600 60  0000 C CNN
+F 3 "" H 6500 5600 60  0000 C CNN
+	1    6500 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0196
+U 1 1 5CEDA650
+P 6150 5600
+F 0 "#PWR0196" H 6150 5350 50  0001 C CNN
+F 1 "GND" H 6155 5427 50  0000 C CNN
+F 2 "" H 6150 5600 60  0000 C CNN
+F 3 "" H 6150 5600 60  0000 C CNN
+	1    6150 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0197
+U 1 1 5CED93B1
+P 5800 5600
+F 0 "#PWR0197" H 5800 5350 50  0001 C CNN
+F 1 "GND" H 5805 5427 50  0000 C CNN
+F 2 "" H 5800 5600 60  0000 C CNN
+F 3 "" H 5800 5600 60  0000 C CNN
+	1    5800 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP11
+U 1 1 5CED8AFB
+P 6500 5600
+F 0 "TP11" V 6600 5700 50  0000 C CNN
+F 1 "GND" V 6400 5650 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch7.62mm_Drill1.3mm" H 6700 5600 50  0001 C CNN
+F 3 "~" H 6700 5600 50  0001 C CNN
+	1    6500 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP9
+U 1 1 5CED7B3C
+P 6150 5600
+F 0 "TP9" V 6250 5700 50  0000 C CNN
+F 1 "GND" V 6050 5650 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch7.62mm_Drill1.3mm" H 6350 5600 50  0001 C CNN
+F 3 "~" H 6350 5600 50  0001 C CNN
+	1    6150 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5CED7376
+P 5800 5600
+F 0 "TP7" V 5900 5700 50  0000 C CNN
+F 1 "GND" V 5700 5650 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch7.62mm_Drill1.3mm" H 6000 5600 50  0001 C CNN
+F 3 "~" H 6000 5600 50  0001 C CNN
+	1    5800 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0198
+U 1 1 5CEC4DE3
+P 6375 5175
+F 0 "#PWR0198" H 6375 5025 50  0001 C CNN
+F 1 "+3.3V" H 6390 5348 50  0000 C CNN
+F 2 "" H 6375 5175 50  0001 C CNN
+F 3 "" H 6375 5175 50  0001 C CNN
+	1    6375 5175
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:+5V-nixie-cache #PWR0199
+U 1 1 5CEBD13C
+P 6100 5150
+F 0 "#PWR0199" H 6100 5000 50  0001 C CNN
+F 1 "+5V" H 6115 5323 50  0000 C CNN
+F 2 "" H 6100 5150 60  0000 C CNN
+F 3 "" H 6100 5150 60  0000 C CNN
+	1    6100 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:+12V-DS3231SN #PWR0200
+U 1 1 5CEB3318
+P 5800 5150
+F 0 "#PWR0200" H 5800 5000 50  0001 C CNN
+F 1 "+12V" H 5815 5323 50  0000 C CNN
+F 2 "" H 5800 5150 60  0000 C CNN
+F 3 "" H 5800 5150 60  0000 C CNN
+	1    5800 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5CEAA49E
+P 5800 5150
+F 0 "TP6" V 5900 5350 50  0000 R CNN
+F 1 "12V" V 5700 5250 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch6.35mm_Drill1.3mm" H 6000 5150 50  0001 C CNN
+F 3 "~" H 6000 5150 50  0001 C CNN
+	1    5800 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP10
+U 1 1 5CEAB835
+P 6375 5175
+F 0 "TP10" V 6475 5275 50  0000 C CNN
+F 1 "3.3V" V 6275 5225 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch6.35mm_Drill1.3mm" H 6575 5175 50  0001 C CNN
+F 3 "~" H 6575 5175 50  0001 C CNN
+	1    6375 5175
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5CEAAC87
+P 6100 5150
+F 0 "TP8" V 6200 5250 50  0000 C CNN
+F 1 "5V" V 6000 5200 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch6.35mm_Drill1.3mm" H 6300 5150 50  0001 C CNN
+F 3 "~" H 6300 5150 50  0001 C CNN
+	1    6100 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J4
+U 1 1 5D5B8D08
+P 4600 1150
+F 0 "J4" H 4600 850 50  0000 C CNN
+F 1 "SN65HVD230" H 4600 1350 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 4600 1150 50  0001 C CNN
+F 3 "~" H 4600 1150 50  0001 C CNN
+	1    4600 1150
+	-1   0    0    1   
+$EndComp
+Text GLabel 5400 1100 3    50   Input ~ 0
+PA12
+Text GLabel 5300 1100 3    50   Input ~ 0
+PA11
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0202
+U 1 1 5D5C4E7B
+P 4800 1050
+F 0 "#PWR0202" H 4800 800 50  0001 C CNN
+F 1 "GND" V 4805 922 50  0000 R CNN
+F 2 "" H 4800 1050 60  0000 C CNN
+F 3 "" H 4800 1050 60  0000 C CNN
+	1    4800 1050
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4800 1150 2    50   Input ~ 0
+CRX
+Text GLabel 4800 1250 2    50   Input ~ 0
+CTX
+Text GLabel 5300 600  1    50   Input ~ 0
+CRX
+Text GLabel 5400 600  1    50   Input ~ 0
+CTX
+Wire Notes Line
+	4350 1400 8300 1400
+Text Notes 4400 600  0    118  ~ 0
+CAN
+Text GLabel -2450 2750 0    50   Input ~ 0
+PG1
+Text GLabel -2450 2850 0    50   Input ~ 0
+PG2
+Text GLabel -2450 2950 0    50   Input ~ 0
+PG3
+Text GLabel -2450 3050 0    50   Input ~ 0
+PG4
+Text GLabel -2450 3150 0    50   Input ~ 0
+PG5
+Text GLabel -2450 3250 0    50   Input ~ 0
+PG6
+Text GLabel -2450 3350 0    50   Input ~ 0
+PG7
+Text GLabel -2450 3450 0    50   Input ~ 0
+PG8
+Text GLabel -2450 3550 0    50   Input ~ 0
+PG9
+Text GLabel -2450 3650 0    50   Input ~ 0
+PG10
+Text GLabel -2450 3750 0    50   Input ~ 0
+PG11
+Text GLabel -2450 3850 0    50   Input ~ 0
+PG12
+Text GLabel -2450 3950 0    50   Input ~ 0
+PG13
+Text GLabel -2450 4050 0    50   Input ~ 0
+PG14
+Text GLabel -2450 4150 0    50   Input ~ 0
+PG15
+Text GLabel -2450 4350 0    50   Input ~ 0
+PF0
+Text GLabel -2450 4450 0    50   Input ~ 0
+PF1
+Text GLabel -2450 4550 0    50   Input ~ 0
+PF2
+Text GLabel -2450 4650 0    50   Input ~ 0
+PF3
+Text GLabel -2450 4750 0    50   Input ~ 0
+PF4
+Text GLabel -2450 4850 0    50   Input ~ 0
+PF5
+Text GLabel -2450 4950 0    50   Input ~ 0
+PF6
+Text GLabel -2450 5050 0    50   Input ~ 0
+PF7
+Text GLabel -2450 5150 0    50   Input ~ 0
+PF8
+Text GLabel -2450 5250 0    50   Input ~ 0
+PF9
+Text GLabel -2450 5350 0    50   Input ~ 0
+PF10
+Text GLabel -2450 5450 0    50   Input ~ 0
+PF11
+Text GLabel -2450 5550 0    50   Input ~ 0
+PF12
+Text GLabel -2450 5650 0    50   Input ~ 0
+PF13
+Text GLabel -2450 5750 0    50   Input ~ 0
+PF14
+Text GLabel -2450 5850 0    50   Input ~ 0
+PF15
+Text GLabel -2450 6050 0    50   Input ~ 0
+PE0
+Text GLabel -2450 6150 0    50   Input ~ 0
+PE1
+Text GLabel -2450 6250 0    50   Input ~ 0
+PE2
+Text GLabel -2450 6350 0    50   Input ~ 0
+PE3
+Text GLabel -2450 6450 0    50   Input ~ 0
+PE4
+Text GLabel -2450 6550 0    50   Input ~ 0
+PE5
+Text GLabel -2450 6650 0    50   Input ~ 0
+PE6
+Text GLabel -2450 6750 0    50   Input ~ 0
+PE7
+Text GLabel -2450 6850 0    50   Input ~ 0
+PE8
+Text GLabel -2450 6950 0    50   Input ~ 0
+PE9
+Text GLabel -2450 7050 0    50   Input ~ 0
+PE10
+Text GLabel -2450 7150 0    50   Input ~ 0
+PE11
+Text GLabel -2450 7250 0    50   Input ~ 0
+PE12
+Text GLabel -2450 7350 0    50   Input ~ 0
+PE13
+Text GLabel -2450 7450 0    50   Input ~ 0
+PE14
+Text GLabel -2450 7550 0    50   Input ~ 0
+PE15
+Text GLabel -50  7550 2    50   Input ~ 0
+PD15
+Text GLabel -50  7450 2    50   Input ~ 0
+PD14
+Text GLabel -50  7350 2    50   Input ~ 0
+PD13
+Text GLabel -50  7250 2    50   Input ~ 0
+PD12
+Text GLabel -50  7150 2    50   Input ~ 0
+PD11
+Text GLabel -50  7050 2    50   Input ~ 0
+PD10
+Text GLabel -50  6950 2    50   Input ~ 0
+PD9
+Text GLabel -50  6850 2    50   Input ~ 0
+PD8
+Text GLabel -50  6750 2    50   Input ~ 0
+PD7
+Text GLabel -50  6650 2    50   Input ~ 0
+PD6
+Text GLabel -50  6550 2    50   Input ~ 0
+PD5
+Text GLabel -50  6450 2    50   Input ~ 0
+PD4
+Text GLabel -50  6350 2    50   Input ~ 0
+PD3
+Text GLabel -50  6250 2    50   Input ~ 0
+PD2
+Text GLabel -50  6150 2    50   Input ~ 0
+PD1
+Text GLabel -50  6050 2    50   Input ~ 0
+PD0
+Text GLabel -50  5850 2    50   Input ~ 0
+PC15
+Text GLabel -50  5750 2    50   Input ~ 0
+PC14
+Text GLabel -50  5650 2    50   Input ~ 0
+PC13
+Text GLabel -50  5550 2    50   Input ~ 0
+PC12
+Text GLabel -50  5450 2    50   Input ~ 0
+PC11
+Text GLabel -50  5250 2    50   Input ~ 0
+PC9
+Text GLabel -50  5150 2    50   Input ~ 0
+PC8
+Text GLabel -50  5050 2    50   Input ~ 0
+PC7
+Text GLabel -50  4950 2    50   Input ~ 0
+PC6
+Text GLabel -50  4850 2    50   Input ~ 0
+PC5
+Text GLabel -50  4750 2    50   Input ~ 0
+PC4
+Text GLabel -50  4650 2    50   Input ~ 0
+PC3
+Text GLabel -50  4550 2    50   Input ~ 0
+PC2
+Text GLabel -50  4450 2    50   Input ~ 0
+PC1
+Text GLabel -50  4350 2    50   Input ~ 0
+PC0
+Text GLabel -50  4150 2    50   Input ~ 0
+PB15
+Text GLabel -50  4050 2    50   Input ~ 0
+PB14
+Text GLabel -50  3950 2    50   Input ~ 0
+PB13
+Text GLabel -50  3850 2    50   Input ~ 0
+PB12
+Text GLabel -50  3750 2    50   Input ~ 0
+PB11
+Text GLabel -50  3650 2    50   Input ~ 0
+PB10
+Text GLabel -50  3550 2    50   Input ~ 0
+PB9
+Text GLabel -50  3450 2    50   Input ~ 0
+PB8
+Text GLabel -50  3350 2    50   Input ~ 0
+PB7
+Text GLabel -50  3250 2    50   Input ~ 0
+PB6
+Text GLabel -50  3150 2    50   Input ~ 0
+PB5
+Text GLabel -50  3050 2    50   Input ~ 0
+PB4
+Text GLabel -50  2850 2    50   Input ~ 0
+PB2
+Text GLabel -50  2750 2    50   Input ~ 0
+PB1
+Text GLabel -50  2650 2    50   Input ~ 0
+PB0
+Text GLabel -50  2450 2    50   Input ~ 0
+PA15
+Text GLabel -50  2150 2    50   Input ~ 0
+PA12
+Text GLabel -50  2050 2    50   Input ~ 0
+PA11
+Text GLabel -50  1950 2    50   Input ~ 0
+PA10
+Text GLabel -50  1850 2    50   Input ~ 0
+PA9
+Text GLabel -50  1750 2    50   Input ~ 0
+PA8
+Text GLabel -50  1650 2    50   Input ~ 0
+PA7
+Text GLabel -50  1550 2    50   Input ~ 0
+PA6
+Text GLabel -50  1450 2    50   Input ~ 0
+PA5
+Text GLabel -50  1350 2    50   Input ~ 0
+PA4
+Text GLabel -50  1250 2    50   Input ~ 0
+PA3
+Text GLabel -50  1150 2    50   Input ~ 0
+PA2
+Text GLabel -50  1050 2    50   Input ~ 0
+PA1
+Text GLabel -50  950  2    50   Input ~ 0
+PA0
+Text GLabel -50  2250 2    50   Input ~ 0
+SWDIO
+Text GLabel -50  2950 2    50   Input ~ 0
+SWO
+Text GLabel -50  2350 2    50   Input ~ 0
+SWCLK
+Text GLabel -2450 1250 0    50   Input ~ 0
+BOOT0
+Wire Wire Line
+	-3300 1550 -2450 1550
+$Comp
+L power:GNDA #PWR0203
+U 1 1 5CF3FD75
+P -2600 1950
+F 0 "#PWR0203" H -2600 1700 50  0001 C CNN
+F 1 "GNDA" H -2595 1777 50  0000 C CNN
+F 2 "" H -2600 1950 50  0001 C CNN
+F 3 "" H -2600 1950 50  0001 C CNN
+	1    -2600 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-2600 1650 -2450 1650
+$Comp
+L Device:C C3
+U 1 1 5CF36CD9
+P -2600 1800
+F 0 "C3" H -2485 1846 50  0000 L CNN
+F 1 "0.1uF" H -2485 1755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H -2562 1650 50  0001 C CNN
+F 3 "~" H -2600 1800 50  0001 C CNN
+	1    -2600 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0204
+U 1 1 5CF36203
+P -3300 1850
+F 0 "#PWR0204" H -3300 1600 50  0001 C CNN
+F 1 "GND" H -3295 1677 50  0000 C CNN
+F 2 "" H -3300 1850 60  0000 C CNN
+F 3 "" H -3300 1850 60  0000 C CNN
+	1    -3300 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0205
+U 1 1 5CF34846
+P -3900 1750
+F 0 "#PWR0205" H -3900 1500 50  0001 C CNN
+F 1 "GND" H -3895 1577 50  0000 C CNN
+F 2 "" H -3900 1750 60  0000 C CNN
+F 3 "" H -3900 1750 60  0000 C CNN
+	1    -3900 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5CF2EA9C
+P -3900 1600
+F 0 "C1" H -3785 1646 50  0000 L CNN
+F 1 "2.2uF" H -3785 1555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H -3862 1450 50  0001 C CNN
+F 3 "~" H -3900 1600 50  0001 C CNN
+	1    -3900 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5CF2B903
+P -3300 1700
+F 0 "C2" H -3185 1746 50  0000 L CNN
+F 1 "2.2uF" H -3185 1655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H -3262 1550 50  0001 C CNN
+F 3 "~" H -3300 1700 50  0001 C CNN
+	1    -3300 1700
+	1    0    0    -1  
+$EndComp
+Text GLabel -2600 1650 0    50   Input ~ 0
+3.3VADC
+Connection ~ -1550 7850
+Wire Wire Line
+	-1550 7850 -1650 7850
+Connection ~ -1450 7850
+Wire Wire Line
+	-1450 7850 -1550 7850
+Connection ~ -1350 7850
+Wire Wire Line
+	-1350 7850 -1450 7850
+Connection ~ -1250 7850
+Wire Wire Line
+	-1250 7850 -1350 7850
+Connection ~ -1200 7850
+Wire Wire Line
+	-1200 7850 -1250 7850
+Connection ~ -950 7850
+Wire Wire Line
+	-950 7850 -850 7850
+Connection ~ -1050 7850
+Wire Wire Line
+	-1050 7850 -950 7850
+Connection ~ -1150 7850
+Wire Wire Line
+	-1150 7850 -1050 7850
+Wire Wire Line
+	-1200 7850 -1150 7850
+Wire Wire Line
+	-1200 8000 -1200 7850
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0206
+U 1 1 5CE8764A
+P -1200 8000
+F 0 "#PWR0206" H -1200 7750 50  0001 C CNN
+F 1 "GND" H -1195 7827 50  0000 C CNN
+F 2 "" H -1200 8000 60  0000 C CNN
+F 3 "" H -1200 8000 60  0000 C CNN
+	1    -1200 8000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0207
+U 1 1 5CE82125
+P -750 7850
+F 0 "#PWR0207" H -750 7600 50  0001 C CNN
+F 1 "GNDA" H -745 7677 50  0000 C CNN
+F 2 "" H -750 7850 50  0001 C CNN
+F 3 "" H -750 7850 50  0001 C CNN
+	1    -750 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0208
+U 1 1 5CE81891
+P -50 650
+F 0 "#PWR0208" H -50 400 50  0001 C CNN
+F 1 "GNDA" H -45 477 50  0000 C CNN
+F 2 "" H -50 650 50  0001 C CNN
+F 3 "" H -50 650 50  0001 C CNN
+	1    -50  650 
+	1    0    0    -1  
+$EndComp
+Text GLabel -2175 650  0    50   Input ~ 0
+3.3VDDC
+Wire Wire Line
+	-350 650  -550 650 
+$Comp
+L Device:C C16
+U 1 1 5CF2338D
+P -200 650
+F 0 "C16" V -452 650 50  0000 C CNN
+F 1 "0.1uF" V -361 650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H -162 500 50  0001 C CNN
+F 3 "~" H -200 650 50  0001 C CNN
+	1    -200 650 
+	0    1    1    0   
+$EndComp
+Connection ~ -650 650 
+Wire Wire Line
+	-750 650  -650 650 
+Connection ~ -750 650 
+Wire Wire Line
+	-850 650  -750 650 
+Connection ~ -850 650 
+Wire Wire Line
+	-850 650  -950 650 
+Connection ~ -950 650 
+Wire Wire Line
+	-1050 650  -950 650 
+Connection ~ -1050 650 
+Wire Wire Line
+	-1150 650  -1050 650 
+Connection ~ -1150 650 
+Wire Wire Line
+	-1250 650  -1150 650 
+Connection ~ -1250 650 
+Wire Wire Line
+	-1350 650  -1250 650 
+Connection ~ -1350 650 
+Wire Wire Line
+	-1450 650  -1350 650 
+Connection ~ -1450 650 
+Wire Wire Line
+	-1550 650  -1450 650 
+Connection ~ -1550 650 
+Wire Wire Line
+	-1650 650  -1550 650 
+Connection ~ -1650 650 
+Wire Wire Line
+	-1750 650  -1650 650 
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0209
+U 1 1 5CE9717D
+P -850 350
+F 0 "#PWR0209" H -850 100 50  0001 C CNN
+F 1 "GND" V -845 222 50  0000 R CNN
+F 2 "" H -850 350 60  0000 C CNN
+F 3 "" H -850 350 60  0000 C CNN
+	1    -850 350 
+	0    1    1    0   
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0210
+U 1 1 5CE96C39
+P -1150 350
+F 0 "#PWR0210" H -1150 100 50  0001 C CNN
+F 1 "GND" V -1145 222 50  0000 R CNN
+F 2 "" H -1150 350 60  0000 C CNN
+F 3 "" H -1150 350 60  0000 C CNN
+	1    -1150 350 
+	0    1    1    0   
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0211
+U 1 1 5CE95D2F
+P -1450 350
+F 0 "#PWR0211" H -1450 100 50  0001 C CNN
+F 1 "GND" V -1445 222 50  0000 R CNN
+F 2 "" H -1450 350 60  0000 C CNN
+F 3 "" H -1450 350 60  0000 C CNN
+	1    -1450 350 
+	0    1    1    0   
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0212
+U 1 1 5CE95860
+P -1350 50
+F 0 "#PWR0212" H -1350 -200 50  0001 C CNN
+F 1 "GND" V -1345 -78 50  0000 R CNN
+F 2 "" H -1350 50  60  0000 C CNN
+F 3 "" H -1350 50  60  0000 C CNN
+	1    -1350 50  
+	0    1    1    0   
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0213
+U 1 1 5CE952F0
+P -1050 50
+F 0 "#PWR0213" H -1050 -200 50  0001 C CNN
+F 1 "GND" V -1045 -78 50  0000 R CNN
+F 2 "" H -1050 50  60  0000 C CNN
+F 3 "" H -1050 50  60  0000 C CNN
+	1    -1050 50  
+	0    1    1    0   
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0214
+U 1 1 5CE94C40
+P -750 50
+F 0 "#PWR0214" H -750 -200 50  0001 C CNN
+F 1 "GND" V -745 -78 50  0000 R CNN
+F 2 "" H -750 50  60  0000 C CNN
+F 3 "" H -750 50  60  0000 C CNN
+	1    -750 50  
+	0    1    1    0   
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0215
+U 1 1 5CE94357
+P -650 -250
+F 0 "#PWR0215" H -650 -500 50  0001 C CNN
+F 1 "GND" V -645 -378 50  0000 R CNN
+F 2 "" H -650 -250 60  0000 C CNN
+F 3 "" H -650 -250 60  0000 C CNN
+	1    -650 -250
+	0    1    1    0   
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0216
+U 1 1 5CE93D07
+P -950 -250
+F 0 "#PWR0216" H -950 -500 50  0001 C CNN
+F 1 "GND" V -945 -378 50  0000 R CNN
+F 2 "" H -950 -250 60  0000 C CNN
+F 3 "" H -950 -250 60  0000 C CNN
+	1    -950 -250
+	0    1    1    0   
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0217
+U 1 1 5CE935DD
+P -1250 -250
+F 0 "#PWR0217" H -1250 -500 50  0001 C CNN
+F 1 "GND" V -1245 -378 50  0000 R CNN
+F 2 "" H -1250 -250 60  0000 C CNN
+F 3 "" H -1250 -250 60  0000 C CNN
+	1    -1250 -250
+	0    1    1    0   
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0218
+U 1 1 5CE92F90
+P -1550 -250
+F 0 "#PWR0218" H -1550 -500 50  0001 C CNN
+F 1 "GND" V -1545 -378 50  0000 R CNN
+F 2 "" H -1550 -250 60  0000 C CNN
+F 3 "" H -1550 -250 60  0000 C CNN
+	1    -1550 -250
+	0    1    1    0   
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0219
+U 1 1 5CE92873
+P -1650 50
+F 0 "#PWR0219" H -1650 -200 50  0001 C CNN
+F 1 "GND" V -1645 -78 50  0000 R CNN
+F 2 "" H -1650 50  60  0000 C CNN
+F 3 "" H -1650 50  60  0000 C CNN
+	1    -1650 50  
+	0    1    1    0   
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0220
+U 1 1 5CE91919
+P -1750 350
+F 0 "#PWR0220" H -1750 100 50  0001 C CNN
+F 1 "GND" V -1745 222 50  0000 R CNN
+F 2 "" H -1750 350 60  0000 C CNN
+F 3 "" H -1750 350 60  0000 C CNN
+	1    -1750 350 
+	0    1    1    0   
+$EndComp
+Connection ~ -1750 650 
+Wire Wire Line
+	-1850 650  -1750 650 
+Wire Wire Line
+	-750 350  -750 650 
+Wire Wire Line
+	-650 650  -650 50  
+$Comp
+L Device:C C15
+U 1 1 5CE8EFFE
+P -650 -100
+F 0 "C15" H -535 -54 50  0000 L CNN
+F 1 "0.1uF" H -535 -145 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H -612 -250 50  0001 C CNN
+F 3 "~" H -650 -100 50  0001 C CNN
+	1    -650 -100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 5CE8E96F
+P -750 200
+F 0 "C14" H -635 246 50  0000 L CNN
+F 1 "0.1uF" H -635 155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H -712 50  50  0001 C CNN
+F 3 "~" H -750 200 50  0001 C CNN
+	1    -750 200 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 5CE8E2CC
+P -850 500
+F 0 "C13" H -735 546 50  0000 L CNN
+F 1 "0.1uF" H -735 455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H -812 350 50  0001 C CNN
+F 3 "~" H -850 500 50  0001 C CNN
+	1    -850 500 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-1050 350  -1050 650 
+Wire Wire Line
+	-950 650  -950 50  
+$Comp
+L Device:C C12
+U 1 1 5CE8C0CA
+P -950 -100
+F 0 "C12" H -835 -54 50  0000 L CNN
+F 1 "0.1uF" H -835 -145 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H -912 -250 50  0001 C CNN
+F 3 "~" H -950 -100 50  0001 C CNN
+	1    -950 -100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 5CE8BA51
+P -1050 200
+F 0 "C11" H -935 246 50  0000 L CNN
+F 1 "0.1uF" H -935 155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H -1012 50  50  0001 C CNN
+F 3 "~" H -1050 200 50  0001 C CNN
+	1    -1050 200 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 5CE8B10A
+P -1150 500
+F 0 "C10" H -1035 546 50  0000 L CNN
+F 1 "0.1uF" H -1035 455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H -1112 350 50  0001 C CNN
+F 3 "~" H -1150 500 50  0001 C CNN
+	1    -1150 500 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-1250 50   -1250 650 
+Wire Wire Line
+	-1350 650  -1350 350 
+$Comp
+L Device:C C9
+U 1 1 5CE89524
+P -1250 -100
+F 0 "C9" H -1135 -54 50  0000 L CNN
+F 1 "0.1uF" H -1135 -145 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H -1212 -250 50  0001 C CNN
+F 3 "~" H -1250 -100 50  0001 C CNN
+	1    -1250 -100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 5CE88A26
+P -1350 200
+F 0 "C8" H -1235 246 50  0000 L CNN
+F 1 "0.1uF" H -1235 155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H -1312 50  50  0001 C CNN
+F 3 "~" H -1350 200 50  0001 C CNN
+	1    -1350 200 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5CE8758F
+P -1450 500
+F 0 "C7" H -1335 546 50  0000 L CNN
+F 1 "0.1uF" H -1335 455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H -1412 350 50  0001 C CNN
+F 3 "~" H -1450 500 50  0001 C CNN
+	1    -1450 500 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-1550 50   -1550 650 
+Wire Wire Line
+	-1650 350  -1650 650 
+$Comp
+L Device:C C6
+U 1 1 5CE8569D
+P -1550 -100
+F 0 "C6" H -1435 -54 50  0000 L CNN
+F 1 "0.1uF" H -1435 -145 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H -1512 -250 50  0001 C CNN
+F 3 "~" H -1550 -100 50  0001 C CNN
+	1    -1550 -100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5CE84BA8
+P -1650 200
+F 0 "C5" H -1535 246 50  0000 L CNN
+F 1 "0.1uF" H -1535 155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H -1612 50  50  0001 C CNN
+F 3 "~" H -1650 200 50  0001 C CNN
+	1    -1650 200 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5CE80BE9
+P -1750 500
+F 0 "C4" H -1635 546 50  0000 L CNN
+F 1 "0.1uF" H -1635 455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H -1712 350 50  0001 C CNN
+F 3 "~" H -1750 500 50  0001 C CNN
+	1    -1750 500 
+	1    0    0    -1  
+$EndComp
+Text GLabel -2450 950  0    50   Input ~ 0
+Reset
+Text GLabel -2450 2450 0    50   Input ~ 0
+RCC_OSC_OUT
+Text GLabel -2450 2350 0    50   Input ~ 0
+RCC_OSC_IN
+$Comp
+L MCU_ST_STM32F4:STM32F407ZETx U1
+U 1 1 5CDD67BC
+P -1250 4250
+F 0 "U1" H -2150 7700 50  0000 C CNN
+F 1 "STM32F407ZETx" H -400 750 50  0000 C CNN
+F 2 "Package_QFP:LQFP-144_20x20mm_P0.5mm" H -2250 850 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf" H -1250 4250 50  0001 C CNN
+	1    -1250 4250
+	1    0    0    -1  
+$EndComp
+Text GLabel -2450 2650 0    50   Input ~ 0
+PG0
+Text GLabel 4775 1750 0    50   Input ~ 0
+PC6
+Text GLabel 4700 1950 0    50   Input ~ 0
+5VOUT
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0221
+U 1 1 5CF9CB9B
+P 5250 1550
+F 0 "#PWR0221" H 5250 1300 50  0001 C CNN
+F 1 "GND" V 5255 1422 50  0000 R CNN
+F 2 "" H 5250 1550 60  0000 C CNN
+F 3 "" H 5250 1550 60  0000 C CNN
+	1    5250 1550
+	0    -1   -1   0   
+$EndComp
+Text Notes 4400 1500 0    50   ~ 0
+Buzzer
+Text GLabel 3350 950  0    50   Input ~ 0
+PG11
+Text GLabel 3850 950  2    50   Input ~ 0
+PG10
+Text GLabel 3350 1050 0    50   Input ~ 0
+PG9
+Text GLabel 3850 1050 2    50   Input ~ 0
+PD7
+Text GLabel 3350 1150 0    50   Input ~ 0
+PD6
+Text GLabel 3850 1150 2    50   Input ~ 0
+3.3VDDC
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0222
+U 1 1 5CFAF872
+P 3350 1250
+F 0 "#PWR0222" H 3350 1000 50  0001 C CNN
+F 1 "GND" V 3355 1122 50  0000 R CNN
+F 2 "" H 3350 1250 60  0000 C CNN
+F 3 "" H 3350 1250 60  0000 C CNN
+	1    3350 1250
+	0    1    1    0   
+$EndComp
+Text GLabel 3850 1250 2    50   Input ~ 0
+PD5
+Text GLabel 3350 1350 0    50   Input ~ 0
+PD4
+Text GLabel 3850 1350 2    50   Input ~ 0
+PD3
+Text GLabel 3350 1450 0    50   Input ~ 0
+PD2
+Text GLabel 3850 1450 2    50   Input ~ 0
+PD1
+Text GLabel 3350 1550 0    50   Input ~ 0
+PD0
+Text GLabel 3850 1550 2    50   Input ~ 0
+PC12
+Text GLabel 3350 1650 0    50   Input ~ 0
+PC11
+Text GLabel 3850 1650 2    50   Input ~ 0
+PC10
+Text GLabel 3350 1750 0    50   Input ~ 0
+PA15
+Text GLabel 3850 1750 2    50   Input ~ 0
+SWCLK
+Text GLabel 3350 1850 0    50   Input ~ 0
+3.3VDDC
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0223
+U 1 1 5CFBEFEC
+P 3850 1850
+F 0 "#PWR0223" H 3850 1600 50  0001 C CNN
+F 1 "GND" V 3855 1722 50  0000 R CNN
+F 2 "" H 3850 1850 60  0000 C CNN
+F 3 "" H 3850 1850 60  0000 C CNN
+	1    3850 1850
+	0    -1   -1   0   
+$EndComp
+Text GLabel -3900 1450 0    50   Input ~ 0
+VCAP_1
+Text GLabel -3300 1550 0    50   Input ~ 0
+VCAP2
+Wire Wire Line
+	-3900 1450 -2450 1450
+Text GLabel 3850 3650 2    50   Input ~ 0
+VCAP_1
+Text GLabel 3350 1950 0    50   Input ~ 0
+VCAP2
+Text GLabel 3850 1950 2    50   Input ~ 0
+SWDIO
+Text GLabel 3850 2050 2    50   Input ~ 0
+PA11
+Text GLabel 3350 2050 0    50   Input ~ 0
+PA12
+Text GLabel 3350 2150 0    50   Input ~ 0
+PA10
+Text GLabel 3850 2150 2    50   Input ~ 0
+PA9
+Text GLabel 3350 2250 0    50   Input ~ 0
+PA8
+Text GLabel 3850 2250 2    50   Input ~ 0
+PC9
+Text GLabel 3850 2350 2    50   Input ~ 0
+PC7
+Text GLabel 3350 2450 0    50   Input ~ 0
+PC6
+Text GLabel 3850 2450 2    50   Input ~ 0
+3.3VDDC
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0224
+U 1 1 5CFE98F6
+P 3350 2550
+F 0 "#PWR0224" H 3350 2300 50  0001 C CNN
+F 1 "GND" V 3355 2422 50  0000 R CNN
+F 2 "" H 3350 2550 60  0000 C CNN
+F 3 "" H 3350 2550 60  0000 C CNN
+	1    3350 2550
+	0    1    1    0   
+$EndComp
+Text GLabel 3850 2550 2    50   Input ~ 0
+PG8
+Text GLabel 3350 2650 0    50   Input ~ 0
+PG7
+Text GLabel 3850 2650 2    50   Input ~ 0
+PG6
+Text GLabel 3350 2750 0    50   Input ~ 0
+PG5
+Text GLabel 3850 2750 2    50   Input ~ 0
+PG4
+Text GLabel 3350 2850 0    50   Input ~ 0
+PG3
+Text GLabel 3850 2850 2    50   Input ~ 0
+PG2
+Text GLabel 3350 2950 0    50   Input ~ 0
+PD15
+Text GLabel 3850 2950 2    50   Input ~ 0
+PD14
+Text GLabel 3350 3050 0    50   Input ~ 0
+3.3VDDC
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0225
+U 1 1 5CFF67AD
+P 3850 3050
+F 0 "#PWR0225" H 3850 2800 50  0001 C CNN
+F 1 "GND" V 3855 2922 50  0000 R CNN
+F 2 "" H 3850 3050 60  0000 C CNN
+F 3 "" H 3850 3050 60  0000 C CNN
+	1    3850 3050
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3350 3150 0    50   Input ~ 0
+PD13
+Text GLabel 3850 3150 2    50   Input ~ 0
+PD12
+Text GLabel 3350 3250 0    50   Input ~ 0
+PD11
+Text GLabel 3850 3250 2    50   Input ~ 0
+PD10
+Text GLabel 3350 3350 0    50   Input ~ 0
+PD9
+Text GLabel 3850 3350 2    50   Input ~ 0
+PD8
+Text GLabel 3350 3450 0    50   Input ~ 0
+PB15
+Text GLabel 3850 3450 2    50   Input ~ 0
+PB14
+Text GLabel 3350 3550 0    50   Input ~ 0
+PB13
+Text GLabel 3850 3550 2    50   Input ~ 0
+PB12
+Text GLabel 3350 3650 0    50   Input ~ 0
+3.3VDDC
+Text GLabel 3350 3750 0    50   Input ~ 0
+PB11
+Text GLabel 3850 3750 2    50   Input ~ 0
+PB10
+Text GLabel 3350 3850 0    50   Input ~ 0
+PE15
+Text GLabel 3850 3850 2    50   Input ~ 0
+PE14
+Text GLabel 3350 3950 0    50   Input ~ 0
+PE13
+Text GLabel 3850 3950 2    50   Input ~ 0
+PE12
+Text GLabel 3350 4050 0    50   Input ~ 0
+PE11
+Text GLabel 3850 4050 2    50   Input ~ 0
+PE10
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0226
+U 1 1 5D0106BA
+P 3850 4150
+F 0 "#PWR0226" H 3850 3900 50  0001 C CNN
+F 1 "GND" V 3855 4022 50  0000 R CNN
+F 2 "" H 3850 4150 60  0000 C CNN
+F 3 "" H 3850 4150 60  0000 C CNN
+	1    3850 4150
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3350 4150 0    50   Input ~ 0
+3.3VDDC
+Text GLabel 3350 4250 0    50   Input ~ 0
+PE9
+Text GLabel 3850 4250 2    50   Input ~ 0
+PE8
+Text GLabel 3350 4350 0    50   Input ~ 0
+PE7
+Text GLabel 3850 4350 2    50   Input ~ 0
+PG1
+Text GLabel 3350 4450 0    50   Input ~ 0
+PG0
+Text GLabel 3850 4450 2    50   Input ~ 0
+PF15
+Text GLabel 2150 950  2    50   Input ~ 0
+PG12
+Text GLabel 1650 950  0    50   Input ~ 0
+PG13
+Text GLabel 2150 1050 2    50   Input ~ 0
+PG14
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0227
+U 1 1 5D027350
+P 1650 1050
+F 0 "#PWR0227" H 1650 800 50  0001 C CNN
+F 1 "GND" V 1655 922 50  0000 R CNN
+F 2 "" H 1650 1050 60  0000 C CNN
+F 3 "" H 1650 1050 60  0000 C CNN
+	1    1650 1050
+	0    1    1    0   
+$EndComp
+Text GLabel 2150 1150 2    50   Input ~ 0
+3.3VDDC
+Text GLabel 1650 1150 0    50   Input ~ 0
+PG15
+Text GLabel 2150 1250 2    50   Input ~ 0
+SWO
+Text GLabel 1650 1250 0    50   Input ~ 0
+PB4
+Text GLabel 2150 1350 2    50   Input ~ 0
+PB5
+Text GLabel 1650 1350 0    50   Input ~ 0
+PB6
+Text GLabel 2150 1450 2    50   Input ~ 0
+PB7
+Text GLabel 1650 1450 0    50   Input ~ 0
+BOOT0
+Text GLabel 2150 1550 2    50   Input ~ 0
+PB8
+Text GLabel 1650 1550 0    50   Input ~ 0
+PB9
+Text GLabel 2150 1650 2    50   Input ~ 0
+PE0
+Text GLabel 1650 1650 0    50   Input ~ 0
+PE1
+Text GLabel -2450 1050 0    50   Input ~ 0
+PDR_ON
+Text GLabel -3200 1200 2    50   Input ~ 0
+PDR_ON
+Text GLabel 2150 1750 2    50   Input ~ 0
+PDR_ON
+Text GLabel 1650 1750 0    50   Input ~ 0
+3.3VDDC
+Text GLabel 2150 1850 2    50   Input ~ 0
+PE2
+Text GLabel 1650 1850 0    50   Input ~ 0
+PE3
+Text GLabel 2150 1950 2    50   Input ~ 0
+PE4
+Text GLabel 1650 1950 0    50   Input ~ 0
+PE5
+Text GLabel 2150 2050 2    50   Input ~ 0
+PE6
+Text GLabel 1650 2050 0    50   Input ~ 0
+3.3VDDC
+Text GLabel 2150 2150 2    50   Input ~ 0
+PC13
+Text GLabel 1650 2150 0    50   Input ~ 0
+PC14
+Text GLabel 2150 2250 2    50   Input ~ 0
+PC15
+Text GLabel 1650 2250 0    50   Input ~ 0
+PF0
+Text GLabel 2150 2350 2    50   Input ~ 0
+PF1
+Text GLabel 1650 2350 0    50   Input ~ 0
+PF2
+Text GLabel 2150 2450 2    50   Input ~ 0
+PF3
+Text GLabel 1650 2450 0    50   Input ~ 0
+PF4
+Text GLabel 2150 2550 2    50   Input ~ 0
+PF5
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0229
+U 1 1 5D05FFCC
+P 1650 2550
+F 0 "#PWR0229" H 1650 2300 50  0001 C CNN
+F 1 "GND" V 1655 2422 50  0000 R CNN
+F 2 "" H 1650 2550 60  0000 C CNN
+F 3 "" H 1650 2550 60  0000 C CNN
+	1    1650 2550
+	0    1    1    0   
+$EndComp
+Text GLabel 2150 2650 2    50   Input ~ 0
+3.3VDDC
+Text GLabel 1650 2650 0    50   Input ~ 0
+PF6
+Text GLabel 2150 2750 2    50   Input ~ 0
+PF7
+Text GLabel 1650 2750 0    50   Input ~ 0
+PF8
+Text GLabel 2150 2850 2    50   Input ~ 0
+PF9
+Text GLabel 1650 2850 0    50   Input ~ 0
+PF10
+Text GLabel 2150 2950 2    50   Input ~ 0
+RCC_OSC_IN
+Text GLabel 1650 2950 0    50   Input ~ 0
+RCC_OSC_OUT
+Text GLabel 2150 3050 2    50   Input ~ 0
+Reset
+Text GLabel 1650 3050 0    50   Input ~ 0
+PC0
+Text GLabel 2150 3150 2    50   Input ~ 0
+PC1
+Text GLabel 1650 3150 0    50   Input ~ 0
+PC2
+Text GLabel 2150 3250 2    50   Input ~ 0
+PC3
+Text GLabel 1650 3250 0    50   Input ~ 0
+3.3VDDC
+$Comp
+L power:GNDA #PWR0230
+U 1 1 5D072E41
+P 2150 3350
+F 0 "#PWR0230" H 2150 3100 50  0001 C CNN
+F 1 "GNDA" H 2155 3177 50  0000 C CNN
+F 2 "" H 2150 3350 50  0001 C CNN
+F 3 "" H 2150 3350 50  0001 C CNN
+	1    2150 3350
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1650 3350 0    50   Input ~ 0
+3.3VADC
+Text GLabel 2150 3450 2    50   Input ~ 0
+3.3VADC
+Text GLabel 1650 3450 0    50   Input ~ 0
+PA0
+Text GLabel 2150 3550 2    50   Input ~ 0
+PA1
+Text GLabel 1650 3550 0    50   Input ~ 0
+PA2
+Text GLabel 2150 3650 2    50   Input ~ 0
+PA3
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0231
+U 1 1 5D07C1D6
+P 1650 3650
+F 0 "#PWR0231" H 1650 3400 50  0001 C CNN
+F 1 "GND" V 1655 3522 50  0000 R CNN
+F 2 "" H 1650 3650 60  0000 C CNN
+F 3 "" H 1650 3650 60  0000 C CNN
+	1    1650 3650
+	0    1    1    0   
+$EndComp
+Text GLabel 2150 3750 2    50   Input ~ 0
+3.3VDDC
+Text GLabel 1650 3750 0    50   Input ~ 0
+PA4
+Text GLabel 2150 3850 2    50   Input ~ 0
+PA5
+Text GLabel 1650 3850 0    50   Input ~ 0
+PA6
+Text GLabel 2150 3950 2    50   Input ~ 0
+PA7
+Text GLabel 1650 3950 0    50   Input ~ 0
+PC4
+Text GLabel 2150 4050 2    50   Input ~ 0
+PC5
+Text GLabel 1650 4050 0    50   Input ~ 0
+PB0
+Text GLabel 2150 4150 2    50   Input ~ 0
+PB1
+Text GLabel 1650 4150 0    50   Input ~ 0
+PB2
+Text GLabel 2150 4250 2    50   Input ~ 0
+PF11
+Text GLabel 1650 4250 0    50   Input ~ 0
+PF12
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0232
+U 1 1 5D08CD63
+P 2150 4350
+F 0 "#PWR0232" H 2150 4100 50  0001 C CNN
+F 1 "GND" V 2155 4222 50  0000 R CNN
+F 2 "" H 2150 4350 60  0000 C CNN
+F 3 "" H 2150 4350 60  0000 C CNN
+	1    2150 4350
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1650 4350 0    50   Input ~ 0
+3.3VDDC
+Text GLabel 2150 4450 2    50   Input ~ 0
+PF13
+Text GLabel 1650 4450 0    50   Input ~ 0
+PF14
+Text GLabel 3350 2350 0    50   Input ~ 0
+PC8
+Wire Notes Line
+	1050 400  1050 4550
+Wire Notes Line
+	1050 400  11300 400 
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 5D110006
+P 5300 850
+F 0 "JP2" V 5100 650 50  0000 L CNN
+F 1 "CAN_RX" V 5200 550 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 5300 850 50  0001 C CNN
+F 3 "~" H 5300 850 50  0001 C CNN
+	1    5300 850 
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP3
+U 1 1 5D11174B
+P 5400 850
+F 0 "JP3" V 5400 550 50  0000 L CNN
+F 1 "CAN_TX" V 5500 450 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 5400 850 50  0001 C CNN
+F 3 "~" H 5400 850 50  0001 C CNN
+	1    5400 850 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 700  5300 600 
+Wire Wire Line
+	5400 700  5400 600 
+Wire Wire Line
+	5300 1000 5300 1100
+Wire Wire Line
+	5400 1000 5400 1100
+$Comp
+L Jumper:SolderJumper_2_Open JP7
+U 1 1 5D14CEAC
+P 7850 550
+F 0 "JP7" H 8100 450 50  0000 L CNN
+F 1 "EEPROM_SCL" H 7750 475 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 7850 550 50  0001 C CNN
+F 3 "~" H 7850 550 50  0001 C CNN
+	1    7850 550 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP8
+U 1 1 5D14D750
+P 7850 650
+F 0 "JP8" H 8100 750 50  0000 L CNN
+F 1 "EEPROM_SDA" H 7750 750 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 7850 650 50  0001 C CNN
+F 3 "~" H 7850 650 50  0001 C CNN
+	1    7850 650 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7600 550  7700 550 
+Wire Wire Line
+	7600 650  7700 650 
+Wire Wire Line
+	8000 650  8100 650 
+Wire Wire Line
+	8000 550  8100 550 
+$Comp
+L Jumper:SolderJumper_2_Open JP20
+U 1 1 5D198599
+P 10800 1875
+F 0 "JP20" H 11450 1875 50  0000 L CNN
+F 1 "MDIO" H 10700 1800 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 10800 1875 50  0001 C CNN
+F 3 "~" H 10800 1875 50  0001 C CNN
+	1    10800 1875
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP21
+U 1 1 5D19DEB2
+P 10800 1975
+F 0 "JP21" H 11450 1975 50  0000 L CNN
+F 1 "OSCIN" H 10700 1900 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 10800 1975 50  0001 C CNN
+F 3 "~" H 10800 1975 50  0001 C CNN
+	1    10800 1975
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP22
+U 1 1 5D19E332
+P 10800 2075
+F 0 "JP22" H 11450 2075 50  0000 L CNN
+F 1 "RX0" H 10700 2000 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 10800 2075 50  0001 C CNN
+F 3 "~" H 10800 2075 50  0001 C CNN
+	1    10800 2075
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP23
+U 1 1 5D19E7A8
+P 10800 2175
+F 0 "JP23" H 11450 2175 50  0000 L CNN
+F 1 "TX_EN" H 10700 2100 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 10800 2175 50  0001 C CNN
+F 3 "~" H 10800 2175 50  0001 C CNN
+	1    10800 2175
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP24
+U 1 1 5D19EAD7
+P 10800 2275
+F 0 "JP24" H 11450 2275 50  0000 L CNN
+F 1 "TX1" H 10700 2200 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 10800 2275 50  0001 C CNN
+F 3 "~" H 10800 2275 50  0001 C CNN
+	1    10800 2275
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP28
+U 1 1 5D19EE6F
+P 10800 2675
+F 0 "JP28" H 11450 2675 50  0000 L CNN
+F 1 "MDC" H 10700 2600 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 10800 2675 50  0001 C CNN
+F 3 "~" H 10800 2675 50  0001 C CNN
+	1    10800 2675
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP27
+U 1 1 5D19F35B
+P 10800 2575
+F 0 "JP27" H 11450 2575 50  0000 L CNN
+F 1 "CRS" H 10700 2500 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 10800 2575 50  0001 C CNN
+F 3 "~" H 10800 2575 50  0001 C CNN
+	1    10800 2575
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP26
+U 1 1 5D19F6A8
+P 10800 2475
+F 0 "JP26" H 11450 2475 50  0000 L CNN
+F 1 "RX1" H 10700 2400 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 10800 2475 50  0001 C CNN
+F 3 "~" H 10800 2475 50  0001 C CNN
+	1    10800 2475
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP25
+U 1 1 5D19F98D
+P 10800 2375
+F 0 "JP25" H 11450 2375 50  0000 L CNN
+F 1 "TX0" H 10700 2300 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 10800 2375 50  0001 C CNN
+F 3 "~" H 10800 2375 50  0001 C CNN
+	1    10800 2375
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10550 1875 10650 1875
+Wire Wire Line
+	10550 1975 10650 1975
+Wire Wire Line
+	10550 2075 10650 2075
+Wire Wire Line
+	10550 2175 10650 2175
+Wire Wire Line
+	10550 2275 10650 2275
+Wire Wire Line
+	10550 2375 10650 2375
+Wire Wire Line
+	10550 2475 10650 2475
+Wire Wire Line
+	10550 2575 10650 2575
+Wire Wire Line
+	10550 2675 10650 2675
+Wire Wire Line
+	10950 2675 11050 2675
+Wire Wire Line
+	10950 2575 11050 2575
+Wire Wire Line
+	10950 2475 11050 2475
+Wire Wire Line
+	10950 2375 11050 2375
+Wire Wire Line
+	10950 2275 11050 2275
+Wire Wire Line
+	10950 2175 11050 2175
+Wire Wire Line
+	10950 2075 11050 2075
+Wire Wire Line
+	10950 1975 11050 1975
+Wire Wire Line
+	10950 1875 11050 1875
+$Comp
+L Jumper:SolderJumper_2_Open JP11
+U 1 1 5D2F01DB
+P 8825 3175
+F 0 "JP11" H 9475 3175 50  0000 L CNN
+F 1 "SD Card_D1" H 8725 3100 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 8825 3175 50  0001 C CNN
+F 3 "~" H 8825 3175 50  0001 C CNN
+	1    8825 3175
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP10
+U 1 1 5D2F30CE
+P 8825 3075
+F 0 "JP10" H 9475 3075 50  0000 L CNN
+F 1 "SD Card_CD" H 8725 3000 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 8825 3075 50  0001 C CNN
+F 3 "~" H 8825 3075 50  0001 C CNN
+	1    8825 3075
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP12
+U 1 1 5D2F35B5
+P 8825 3275
+F 0 "JP12" H 9475 3275 50  0000 L CNN
+F 1 "SD Card_D2" H 8725 3200 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 8825 3275 50  0001 C CNN
+F 3 "~" H 8825 3275 50  0001 C CNN
+	1    8825 3275
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP13
+U 1 1 5D2F3BA2
+P 8825 3375
+F 0 "JP13" H 9475 3375 50  0000 L CNN
+F 1 "SD Card_D3" H 8725 3300 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 8825 3375 50  0001 C CNN
+F 3 "~" H 8825 3375 50  0001 C CNN
+	1    8825 3375
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP14
+U 1 1 5D2F3E74
+P 8825 3475
+F 0 "JP14" H 9475 3475 50  0000 L CNN
+F 1 "SD Card_CLK" H 8725 3400 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 8825 3475 50  0001 C CNN
+F 3 "~" H 8825 3475 50  0001 C CNN
+	1    8825 3475
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP15
+U 1 1 5D2F4128
+P 8825 3575
+F 0 "JP15" H 9475 3575 50  0000 L CNN
+F 1 "SD Card_CMD" H 8725 3500 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 8825 3575 50  0001 C CNN
+F 3 "~" H 8825 3575 50  0001 C CNN
+	1    8825 3575
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP16
+U 1 1 5D2F43CA
+P 8825 3675
+F 0 "JP16" H 9475 3675 50  0000 L CNN
+F 1 "SD Card_D0" H 8725 3600 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 8825 3675 50  0001 C CNN
+F 3 "~" H 8825 3675 50  0001 C CNN
+	1    8825 3675
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8575 3075 8675 3075
+Wire Wire Line
+	8575 3175 8675 3175
+Wire Wire Line
+	8575 3275 8675 3275
+Wire Wire Line
+	8575 3375 8675 3375
+Wire Wire Line
+	8575 3475 8675 3475
+Wire Wire Line
+	8575 3575 8675 3575
+Wire Wire Line
+	8575 3675 8675 3675
+Wire Wire Line
+	8975 3075 9075 3075
+Wire Wire Line
+	8975 3175 9075 3175
+Wire Wire Line
+	8975 3275 9075 3275
+Wire Wire Line
+	8975 3375 9075 3375
+Wire Wire Line
+	8975 3475 9075 3475
+Wire Wire Line
+	8975 3575 9075 3575
+Wire Wire Line
+	9075 3675 8975 3675
+Text GLabel 5650 7150 1    50   Input ~ 0
+12VOUT
+Text GLabel 5650 6100 2    50   Input ~ 0
+12VOUT
+Connection ~ 5650 6200
+Wire Wire Line
+	5650 5900 5800 5900
+Wire Wire Line
+	5650 5900 5650 6200
+$Comp
+L Jumper:SolderJumper_3_Open JP9
+U 1 1 5CFC86AA
+P 8900 4250
+F 0 "JP9" V 8854 4318 50  0000 L CNN
+F 1 "Boot Mode" V 8945 4318 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8900 4250 50  0001 C CNN
+F 3 "~" H 8900 4250 50  0001 C CNN
+	1    8900 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Open JP5
+U 1 1 5CFD24F0
+P 6900 700
+F 0 "JP5" V 6946 767 50  0000 L CNN
+F 1 "A0" V 6855 767 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6900 700 50  0001 C CNN
+F 3 "~" H 6900 700 50  0001 C CNN
+	1    6900 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Open JP4
+U 1 1 5CFD3FAD
+P 6850 1250
+F 0 "JP4" H 6950 1200 50  0000 C CNN
+F 1 "A1" H 6850 1350 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6850 1250 50  0001 C CNN
+F 3 "~" H 6850 1250 50  0001 C CNN
+	1    6850 1250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Open JP6
+U 1 1 5CFD4585
+P 7350 1100
+F 0 "JP6" V 7396 1167 50  0000 L CNN
+F 1 "A2" V 7305 1167 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7350 1100 50  0001 C CNN
+F 3 "~" H 7350 1100 50  0001 C CNN
+	1    7350 1100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP17
+U 1 1 5D018A72
+P 9900 4275
+F 0 "JP17" H 10175 4125 50  0000 L CNN
+F 1 "SQW" H 9800 4200 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 9900 4275 50  0001 C CNN
+F 3 "~" H 9900 4275 50  0001 C CNN
+	1    9900 4275
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP18
+U 1 1 5D019578
+P 9900 4375
+F 0 "JP18" H 10175 4200 50  0000 L CNN
+F 1 "SCL" H 9800 4300 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 9900 4375 50  0001 C CNN
+F 3 "~" H 9900 4375 50  0001 C CNN
+	1    9900 4375
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP19
+U 1 1 5D01A1B4
+P 9900 4475
+F 0 "JP19" H 10175 4575 50  0000 L CNN
+F 1 "SDA" H 9800 4400 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 9900 4475 50  0001 C CNN
+F 3 "~" H 9900 4475 50  0001 C CNN
+	1    9900 4475
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9750 4275 9650 4275
+Wire Wire Line
+	9650 4375 9750 4375
+Wire Wire Line
+	9650 4475 9750 4475
+Wire Wire Line
+	10050 4475 10150 4475
+Wire Wire Line
+	10050 4375 10150 4375
+Wire Wire Line
+	10050 4275 10150 4275
+Text GLabel 3850 5100 0    50   Input ~ 0
+SDA_1
+Text GLabel 3850 5200 0    50   Input ~ 0
+SCL_1
+Text GLabel 2900 6700 2    50   Input ~ 0
+PB10
+Text GLabel 4600 5600 0    50   Input ~ 0
+MOSI_2
+Text GLabel 4600 5500 0    50   Input ~ 0
+MISO_2
+Text GLabel 4600 5400 0    50   Input ~ 0
+SCK_2
+Text GLabel 4600 4900 0    50   Input ~ 0
+MOSI_1
+Text GLabel 4600 5000 0    50   Input ~ 0
+MISO_1
+Text GLabel 4600 5100 0    50   Input ~ 0
+SCK_1
+Text GLabel 3850 5500 0    50   Input ~ 0
+SDA_2
+Text GLabel 3850 5600 0    50   Input ~ 0
+SCL_2
+$Comp
+L Connector_Generic:Conn_01x10 J3
+U 1 1 5CFA425E
+P 4050 5300
+F 0 "J3" H 4000 5800 50  0000 L CNN
+F 1 "I2C" H 3950 4700 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 4050 5300 50  0001 C CNN
+F 3 "~" H 4050 5300 50  0001 C CNN
+	1    4050 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0233
+U 1 1 5CFA6863
+P 3850 5300
+F 0 "#PWR0233" H 3850 5050 50  0001 C CNN
+F 1 "GND" V 3855 5172 50  0000 R CNN
+F 2 "" H 3850 5300 60  0000 C CNN
+F 3 "" H 3850 5300 60  0000 C CNN
+	1    3850 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0234
+U 1 1 5CFA82E6
+P 3850 5400
+F 0 "#PWR0234" H 3850 5150 50  0001 C CNN
+F 1 "GND" V 3855 5272 50  0000 R CNN
+F 2 "" H 3850 5400 60  0000 C CNN
+F 3 "" H 3850 5400 60  0000 C CNN
+	1    3850 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x12 J5
+U 1 1 5CFC7318
+P 4800 5200
+F 0 "J5" H 4750 5800 50  0000 L CNN
+F 1 "SPI" H 4700 4500 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical" H 4800 5200 50  0001 C CNN
+F 3 "~" H 4800 5200 50  0001 C CNN
+	1    4800 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0243
+U 1 1 5D03CABC
+P 4600 5200
+F 0 "#PWR0243" H 4600 4950 50  0001 C CNN
+F 1 "GND" V 4605 5072 50  0000 R CNN
+F 2 "" H 4600 5200 60  0000 C CNN
+F 3 "" H 4600 5200 60  0000 C CNN
+	1    4600 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0244
+U 1 1 5D03D1D0
+P 4600 5300
+F 0 "#PWR0244" H 4600 5050 50  0001 C CNN
+F 1 "GND" V 4605 5172 50  0000 R CNN
+F 2 "" H 4600 5300 60  0000 C CNN
+F 3 "" H 4600 5300 60  0000 C CNN
+	1    4600 5300
+	0    1    1    0   
+$EndComp
+Text Notes 3500 4750 0    118  ~ 0
+I2C, SPI
+$Comp
+L Device:Ferrite_Bead_Small FB3
+U 1 1 5D102324
+P 10700 5600
+F 0 "FB3" V 10550 5600 50  0000 C CNN
+F 1 "Bead" V 10800 5600 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10630 5600 50  0001 C CNN
+F 3 "~" H 10700 5600 50  0001 C CNN
+	1    10700 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB2
+U 1 1 5D104E4C
+P 9750 6400
+F 0 "FB2" V 9600 6400 50  0000 C CNN
+F 1 "Bead" V 9850 6400 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9680 6400 50  0001 C CNN
+F 3 "~" H 9750 6400 50  0001 C CNN
+	1    9750 6400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9900 6500 9900 6400
+Wire Wire Line
+	9900 6400 9850 6400
+Wire Wire Line
+	10850 5700 10850 5600
+Wire Wire Line
+	10850 5600 10800 5600
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5CFFCA4A
+P 4500 6200
+F 0 "TP4" H 4558 6318 50  0000 L CNN
+F 1 "3.3VDC" H 4558 6227 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch6.35mm_Drill1.3mm" H 4700 6200 50  0001 C CNN
+F 3 "~" H 4700 6200 50  0001 C CNN
+	1    4500 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5CFFD9BE
+P 4150 6200
+F 0 "TP3" H 4208 6318 50  0000 L CNN
+F 1 "5VDC" H 4208 6227 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch6.35mm_Drill1.3mm" H 4350 6200 50  0001 C CNN
+F 3 "~" H 4350 6200 50  0001 C CNN
+	1    4150 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5CFFF6BD
+P 3750 6200
+F 0 "TP1" H 3808 6318 50  0000 L CNN
+F 1 "12VDC" H 3808 6227 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch6.35mm_Drill1.3mm" H 3950 6200 50  0001 C CNN
+F 3 "~" H 3950 6200 50  0001 C CNN
+	1    3750 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0245
+U 1 1 5CFFFA4D
+P 10000 5900
+F 0 "#PWR0245" H 10000 5650 50  0001 C CNN
+F 1 "GNDA" H 10005 5727 50  0000 C CNN
+F 2 "" H 10000 5900 50  0001 C CNN
+F 3 "" H 10000 5900 50  0001 C CNN
+	1    10000 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 6800 9750 6800
+$Comp
+L power:GNDA #PWR0246
+U 1 1 5D001462
+P 9750 6800
+F 0 "#PWR0246" H 9750 6550 50  0001 C CNN
+F 1 "GNDA" H 9755 6627 50  0000 C CNN
+F 2 "" H 9750 6800 50  0001 C CNN
+F 3 "" H 9750 6800 50  0001 C CNN
+	1    9750 6800
+	1    0    0    -1  
+$EndComp
+Connection ~ 9750 6800
+Wire Wire Line
+	9750 6800 10000 6800
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5D0023F2
+P 4500 6850
+F 0 "TP5" H 6800 7900 50  0000 L CNN
+F 1 "3.3VADC" H 4558 6877 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch6.35mm_Drill1.3mm" H 4700 6850 50  0001 C CNN
+F 3 "~" H 4700 6850 50  0001 C CNN
+	1    4500 6850
+	1    0    0    -1  
+$EndComp
+Text GLabel 3750 6850 3    50   Input ~ 0
+3.3VDDC
+Text GLabel 4500 6850 3    50   Input ~ 0
+3.3VADC
+Text GLabel 4150 6200 3    50   Input ~ 0
+5VOUT
+Text GLabel 3750 6200 3    50   Input ~ 0
+12VOUT
+Text GLabel 4500 6200 3    50   Input ~ 0
+3.3VOUT
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5D04DE21
+P 3750 6850
+F 0 "TP2" H 3808 6968 50  0000 L CNN
+F 1 "3.3VDDC" H 3808 6877 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch6.35mm_Drill1.3mm" H 3950 6850 50  0001 C CNN
+F 3 "~" H 3950 6850 50  0001 C CNN
+	1    3750 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L4
+U 1 1 5D08055E
+P 10700 6500
+F 0 "L4" V 10890 6500 50  0000 C CNN
+F 1 "10uH" V 10799 6500 50  0000 C CNN
+F 2 "Inductor_SMD:L_12x12mm_H6mm" H 10700 6500 50  0001 C CNN
+F 3 "~" H 10700 6500 50  0001 C CNN
+	1    10700 6500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L L5
+U 1 1 5D083285
+P 10700 7300
+F 0 "L5" V 10890 7300 50  0000 C CNN
+F 1 "10uH" V 10799 7300 50  0000 C CNN
+F 2 "Inductor_SMD:L_12x12mm_H6mm" H 10700 7300 50  0001 C CNN
+F 3 "~" H 10700 7300 50  0001 C CNN
+	1    10700 7300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L L3
+U 1 1 5D083F96
+P 9750 7300
+F 0 "L3" V 9940 7300 50  0000 C CNN
+F 1 "10uH" V 9849 7300 50  0000 C CNN
+F 2 "Inductor_SMD:L_12x12mm_H6mm" H 9750 7300 50  0001 C CNN
+F 3 "~" H 9750 7300 50  0001 C CNN
+	1    9750 7300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10450 7300 10550 7300
+Wire Notes Line
+	3700 6000 3700 7900
+Text GLabel 10200 5100 0    50   Input ~ 0
+3.3VADC
+$Comp
+L power:GNDA #PWR0120
+U 1 1 5D06CEE1
+P 10200 4950
+F 0 "#PWR0120" H 10200 4700 50  0001 C CNN
+F 1 "GNDA" H 10205 4777 50  0000 C CNN
+F 2 "" H 10200 4950 50  0001 C CNN
+F 3 "" H 10200 4950 50  0001 C CNN
+	1    10200 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR0121
+U 1 1 5D06D732
+P 10700 4950
+F 0 "#PWR0121" H 10700 4700 50  0001 C CNN
+F 1 "GNDA" H 10705 4777 50  0000 C CNN
+F 2 "" H 10700 4950 50  0001 C CNN
+F 3 "" H 10700 4950 50  0001 C CNN
+	1    10700 4950
+	0    -1   -1   0   
+$EndComp
+Text GLabel 8900 4050 0    50   Input ~ 0
+3.3VDDC
+Text GLabel 7750 3950 2    50   Input ~ 0
+3.3VDDC
+Text GLabel 6150 2850 1    50   Input ~ 0
+3.3VDDC
+Text GLabel 7000 2850 1    50   Input ~ 0
+3.3VDDC
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J14
+U 1 1 5D31A2BC
+P 9000 1950
+F 0 "J14" H 9050 2450 50  0000 C CNN
+F 1 "DP83848" H 9050 1350 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x10_P2.54mm_Vertical" H 9000 1950 50  0001 C CNN
+F 3 "~" H 9000 1950 50  0001 C CNN
+	1    9000 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x36_Odd_Even J1
+U 1 1 5D328C65
+P 1850 2650
+F 0 "J1" H 1900 4567 50  0000 C CNN
+F 1 " " H 1900 4476 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x36_P2.54mm_Vertical" H 1850 2650 50  0001 C CNN
+F 3 "~" H 1850 2650 50  0001 C CNN
+	1    1850 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x36_Odd_Even J2
+U 1 1 5D32DF3B
+P 3550 2650
+F 0 "J2" H 3600 4567 50  0000 C CNN
+F 1 " " H 3600 4476 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x36_P2.54mm_Vertical" H 3550 2650 50  0001 C CNN
+F 3 "~" H 3550 2650 50  0001 C CNN
+	1    3550 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x02 SW5
+U 1 1 5D07EF6B
+P 7950 3250
+F 0 "SW5" H 7950 3500 50  0000 C CNN
+F 1 "IT-1107(PF4)" H 8025 3000 50  0000 C CNN
+F 2 "PCB:SW_SMD_IT-1107" H 7950 3250 50  0001 C CNN
+F 3 "~" H 7950 3250 50  0001 C CNN
+	1    7950 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 5D07EF71
+P 7550 3000
+F 0 "R17" H 7620 3046 50  0000 L CNN
+F 1 "10k" H 7620 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7480 3000 50  0001 C CNN
+F 3 "~" H 7550 3000 50  0001 C CNN
+	1    7550 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C48
+U 1 1 5D07EF77
+P 7950 3450
+F 0 "C48" V 7900 3300 50  0000 L CNN
+F 1 "0.1uF" V 8050 3200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7988 3300 50  0001 C CNN
+F 3 "~" H 7950 3450 50  0001 C CNN
+	1    7950 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5D07EF7D
+P 8250 3150
+F 0 "#PWR0102" H 8250 2900 50  0001 C CNN
+F 1 "GND" V 8255 3022 50  0000 R CNN
+F 2 "" H 8250 3150 50  0001 C CNN
+F 3 "" H 8250 3150 50  0001 C CNN
+	1    8250 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7800 3450 7550 3450
+Wire Wire Line
+	7550 3450 7550 3250
+Wire Wire Line
+	8250 3150 8250 3250
+Connection ~ 8250 3150
+Wire Wire Line
+	8250 3250 8250 3450
+Wire Wire Line
+	8250 3450 8100 3450
+Connection ~ 8250 3250
+Wire Wire Line
+	7650 3250 7550 3250
+Wire Wire Line
+	7550 3250 7550 3150
+Connection ~ 7550 3250
+Wire Wire Line
+	7550 3150 7650 3150
+Connection ~ 7550 3150
+Wire Wire Line
+	7550 2850 7800 2850
+Text GLabel 7800 2850 1    50   Input ~ 0
+3.3VDDC
+Wire Notes Line
+	4900 2150 4900 6000
+Wire Notes Line
+	4900 3350 5050 3350
+Wire Notes Line
+	5050 3350 5050 3400
+Wire Notes Line
+	5050 3400 5550 3400
+Wire Notes Line
+	4350 2150 4350 400 
+Text GLabel 7550 3450 3    50   Input ~ 0
+PF4
+Wire Notes Line
+	3450 4550 3450 6000
+Text GLabel 3175 5000 1    50   Input ~ 0
+3.3VOUT
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0103
+U 1 1 5D118270
+P 3175 5100
+F 0 "#PWR0103" H 3175 4850 50  0001 C CNN
+F 1 "GND" V 3180 4972 50  0000 R CNN
+F 2 "" H 3175 5100 60  0000 C CNN
+F 3 "" H 3175 5100 60  0000 C CNN
+	1    3175 5100
+	0    -1   1    0   
+$EndComp
+Text GLabel 2025 5300 0    50   Input ~ 0
+MOSI_1
+Text GLabel 2025 5200 0    50   Input ~ 0
+MISO_1
+Text GLabel 2025 5400 0    50   Input ~ 0
+SCK_1
+Text GLabel 2025 5500 0    50   Input ~ 0
+PB9
+Text GLabel 2025 5600 0    50   Input ~ 0
+PF6
+Text GLabel 2025 5700 0    50   Input ~ 0
+PF7
+Text GLabel 2025 5800 0    50   Input ~ 0
+PF8
+$Comp
+L Jumper:SolderJumper_2_Open JP30
+U 1 1 5D14E45B
+P 2175 5300
+F 0 "JP30" H 2650 5300 50  0000 L CNN
+F 1 "MOSI_1" H 2075 5225 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2175 5300 50  0001 C CNN
+F 3 "~" H 2175 5300 50  0001 C CNN
+	1    2175 5300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP31
+U 1 1 5D14E467
+P 2175 5400
+F 0 "JP31" H 2650 5400 50  0000 L CNN
+F 1 "SCK_1" H 2075 5325 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2175 5400 50  0001 C CNN
+F 3 "~" H 2175 5400 50  0001 C CNN
+	1    2175 5400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP32
+U 1 1 5D14E46D
+P 2175 5500
+F 0 "JP32" H 2650 5500 50  0000 L CNN
+F 1 "CSS" H 2075 5425 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2175 5500 50  0001 C CNN
+F 3 "~" H 2175 5500 50  0001 C CNN
+	1    2175 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP29
+U 1 1 5D14E461
+P 2175 5200
+F 0 "JP29" H 2650 5200 50  0000 L CNN
+F 1 "MISO_1" H 2075 5125 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2175 5200 50  0001 C CNN
+F 3 "~" H 2175 5200 50  0001 C CNN
+	1    2175 5200
+	-1   0    0    1   
+$EndComp
+Text GLabel 2875 6700 0    50   Input ~ 0
+SCK_2
+Text GLabel -50  5350 2    50   Input ~ 0
+PC10
+$Comp
+L Jumper:SolderJumper_2_Open JP34
+U 1 1 5D309E69
+P 2175 5700
+F 0 "JP34" H 2650 5700 50  0000 L CNN
+F 1 "xRESET" H 2075 5625 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2175 5700 50  0001 C CNN
+F 3 "~" H 2175 5700 50  0001 C CNN
+	1    2175 5700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP35
+U 1 1 5D309E6F
+P 2175 5800
+F 0 "JP35" H 2650 5800 50  0000 L CNN
+F 1 "xDCS" H 2075 5725 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2175 5800 50  0001 C CNN
+F 3 "~" H 2175 5800 50  0001 C CNN
+	1    2175 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP33
+U 1 1 5D309E7B
+P 2175 5600
+F 0 "JP33" H 2650 5600 50  0000 L CNN
+F 1 "DREQ" H 2075 5525 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2175 5600 50  0001 C CNN
+F 3 "~" H 2175 5600 50  0001 C CNN
+	1    2175 5600
+	-1   0    0    1   
+$EndComp
+Text GLabel 2325 5600 2    50   Input ~ 0
+DREQ
+Text GLabel 2325 5700 2    50   Input ~ 0
+xRESET
+Text GLabel 2325 5800 2    50   Input ~ 0
+xDCS
+Text GLabel 2900 6075 2    50   Input ~ 0
+PB5
+Text GLabel 2900 6175 2    50   Input ~ 0
+PB4
+Text GLabel 2900 6275 2    50   Input ~ 0
+PA5
+Text GLabel 2875 6275 0    50   Input ~ 0
+SCK_1
+Text GLabel 2875 6175 0    50   Input ~ 0
+MISO_1
+Text GLabel 2875 6075 0    50   Input ~ 0
+MOSI_1
+Text GLabel 2900 6600 2    50   Input ~ 0
+PB14
+Text GLabel 2900 6500 2    50   Input ~ 0
+PC3
+Text GLabel 2875 6600 0    50   Input ~ 0
+MISO_2
+Text GLabel 2875 6500 0    50   Input ~ 0
+MOSI_2
+Text GLabel 3500 6600 2    50   Input ~ 0
+PF1
+Text GLabel 3500 6500 2    50   Input ~ 0
+PF0
+Text GLabel 3475 6600 0    50   Input ~ 0
+SCL_2
+Text GLabel 3475 6500 0    50   Input ~ 0
+SDA_2
+Text GLabel 3500 6175 2    50   Input ~ 0
+PB6
+Text GLabel 3500 6075 2    50   Input ~ 0
+PB7
+Text GLabel 3475 6175 0    50   Input ~ 0
+SCL_1
+Text GLabel 3475 6075 0    50   Input ~ 0
+SDA_1
+Text Notes 1575 4800 0    157  ~ 0
+VS1003
+Text GLabel 3850 5700 0    50   Input ~ 0
+3.3VOUT
+Text GLabel 3850 5000 0    50   Input ~ 0
+3.3VOUT
+Text GLabel 4600 4800 0    50   Input ~ 0
+3.3VOUT
+Text GLabel 4600 5700 0    50   Input ~ 0
+3.3VOUT
+Text GLabel 3850 4900 0    50   Input ~ 0
+5VOUT
+Text GLabel 3850 5800 0    50   Input ~ 0
+5VOUT
+Text GLabel 4600 5800 0    50   Input ~ 0
+5VOUT
+Text GLabel 4600 4700 0    50   Input ~ 0
+5VOUT
+Text GLabel 4800 950  1    50   Input ~ 0
+3.3VOUT
+Wire Wire Line
+	6900 500  7250 500 
+Wire Wire Line
+	7250 500  7250 900 
+Wire Wire Line
+	7250 900  7350 900 
+Wire Wire Line
+	6650 1250 6650 1000
+Wire Wire Line
+	6650 1000 6700 1000
+Wire Wire Line
+	6700 500  6900 500 
+Wire Wire Line
+	6700 500  6700 1000
+Connection ~ 6900 500 
+Wire Wire Line
+	8000 900  8150 900 
+Connection ~ 8000 900 
+Text GLabel 8950 1150 0    50   Input ~ 0
+5VOUT
+Wire Wire Line
+	8950 1150 8950 1050
+Text GLabel 10650 950  1    50   Input ~ 0
+5VOUT
+Text GLabel 10050 700  1    50   Input ~ 0
+5VOUT
+Text GLabel 10850 3150 1    50   Input ~ 0
+3.3VOUT
+Text GLabel 10400 3150 1    50   Input ~ 0
+3.3VOUT
+Wire Notes Line
+	1500 6000 1500 4550
+Wire Notes Line
+	1050 4550 4900 4550
+Wire Notes Line
+	1500 6000 4900 6000
+Wire Notes Line
+	2550 6000 2550 6750
+Wire Wire Line
+	2875 6075 2900 6075
+Wire Wire Line
+	2875 6175 2900 6175
+Wire Wire Line
+	2875 6275 2900 6275
+Wire Wire Line
+	2875 6500 2900 6500
+Wire Wire Line
+	2875 6600 2900 6600
+Wire Wire Line
+	2875 6700 2900 6700
+Wire Wire Line
+	3475 6600 3500 6600
+Wire Wire Line
+	3475 6500 3500 6500
+Wire Wire Line
+	3475 6175 3500 6175
+Wire Wire Line
+	3475 6075 3500 6075
+Text GLabel 10650 4600 0    50   Input ~ 0
+5VOUT
+Text GLabel 8675 2975 0    50   Input ~ 0
+3.3VOUT
+Text GLabel 8150 900  3    50   Input ~ 0
+3.3VDDC
+Text GLabel 7350 900  1    50   Input ~ 0
+3.3VDDC
+Text GLabel 6100 550  2    50   Input ~ 0
+3.3VDDC
+Text GLabel 9500 6500 1    50   Input ~ 0
+3.3VOUT
+Text GLabel 10300 5600 1    50   Input ~ 0
+3.3VOUT
+Text GLabel 9950 2900 0    50   Input ~ 0
+CD
+$Comp
+L STM32F4개발보드-rescue:LM35DZ_LFT4-LM35DZ_LFT4 U5
+U 1 1 5D2DC36F
+P 2950 7275
+F 0 "U5" H 2500 7525 50  0000 C CNN
+F 1 "LM35DZ(PA6)" H 2950 6825 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92L_Inline" H 2950 7275 50  0001 L BNN
+F 3 "" H 2950 7275 50  0001 L BNN
+F 4 "TO-92 Texas Instruments" H 2950 7275 50  0001 L BNN "Field4"
+F 5 "Good" H 2950 7275 50  0001 L BNN "Field5"
+F 6 "LM35DZ/LFT4" H 2950 7275 50  0001 L BNN "Field6"
+F 7 "1.00 USD" H 2950 7275 50  0001 L BNN "Field7"
+F 8 "Texas Instruments" H 2950 7275 50  0001 L BNN "Field8"
+	1    2950 7275
+	1    0    0    -1  
+$EndComp
+Text GLabel 2250 7275 1    50   Input ~ 0
+3.3VDDC
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0108
+U 1 1 5D2DF09C
+P 2250 7475
+F 0 "#PWR0108" H 2250 7225 50  0001 C CNN
+F 1 "GND" V 2255 7347 50  0000 R CNN
+F 2 "" H 2250 7475 60  0000 C CNN
+F 3 "" H 2250 7475 60  0000 C CNN
+	1    2250 7475
+	1    0    0    -1  
+$EndComp
+Text GLabel 3650 7275 1    50   Input ~ 0
+PA6
+Wire Notes Line
+	2175 6750 2175 7900
+Text Notes 2325 6925 0    118  ~ 0
+Temp
+Wire Wire Line
+	8800 2450 8800 2625
+$Comp
+L Jumper:SolderJumper_2_Open JP40
+U 1 1 5D0E6794
+P 10800 1775
+F 0 "JP40" H 11450 1775 50  0000 L CNN
+F 1 "DP83848 3.3V" H 10700 1700 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 10800 1775 50  0001 C CNN
+F 3 "~" H 10800 1775 50  0001 C CNN
+	1    10800 1775
+	-1   0    0    1   
+$EndComp
+Text GLabel 11000 1650 2    50   Input ~ 0
+3.3VOUT
+Text GLabel 9300 2450 2    50   Input ~ 0
+DP83848_Power
+Wire Wire Line
+	9300 2450 9300 2625
+Wire Wire Line
+	9300 2625 8800 2625
+Text GLabel 10600 1650 0    50   Input ~ 0
+DP83848_Power
+Text GLabel 9950 3825 0    50   Input ~ 0
+SD_Card_Power
+Wire Wire Line
+	9950 3825 9950 3700
+$Comp
+L Jumper:SolderJumper_2_Open JP39
+U 1 1 5D15EBEF
+P 8825 2975
+F 0 "JP39" H 9475 2975 50  0000 L CNN
+F 1 "SD_Card_3.3V" H 8725 2900 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 8825 2975 50  0001 C CNN
+F 3 "~" H 8825 2975 50  0001 C CNN
+	1    8825 2975
+	-1   0    0    1   
+$EndComp
+Text GLabel 8975 2975 2    50   Input ~ 0
+SD_Card_Power
+$Comp
+L Jumper:SolderJumper_2_Open JP36
+U 1 1 5D1A126C
+P 10450 5600
+F 0 "JP36" H 11100 5600 50  0000 L CNN
+F 1 "MCU DVCC" H 10350 5525 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 10450 5600 50  0001 C CNN
+F 3 "~" H 10450 5600 50  0001 C CNN
+	1    10450 5600
+	-1   0    0    1   
+$EndComp
+Connection ~ -1850 650 
+$Comp
+L Jumper:SolderJumper_2_Open JP38
+U 1 1 5D3633F6
+P 4350 7650
+F 0 "JP38" H 4450 7550 50  0000 L CNN
+F 1 "VIN" H 4250 7575 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 4350 7650 50  0001 C CNN
+F 3 "~" H 4350 7650 50  0001 C CNN
+	1    4350 7650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4150 7450 4150 7650
+Wire Wire Line
+	4150 7650 4200 7650
+Wire Wire Line
+	4550 7450 4550 7650
+Wire Wire Line
+	4550 7650 4500 7650
+Text GLabel 4150 7650 0    50   Input ~ 0
+12V
+Text GLabel 8400 5350 1    50   Input ~ 0
+12V
+Connection ~ 4550 7650
+Wire Wire Line
+	10600 1650 10600 1775
+Wire Wire Line
+	10600 1775 10650 1775
+Wire Wire Line
+	11000 1650 11000 1775
+Wire Wire Line
+	11000 1775 10950 1775
+Wire Wire Line
+	8975 2975 8975 2900
+Wire Wire Line
+	8975 2900 9025 2900
+Wire Wire Line
+	9025 2900 9025 2875
+Wire Wire Line
+	8675 2975 8675 2900
+Wire Wire Line
+	8675 2900 8625 2900
+Wire Wire Line
+	8625 2900 8625 2875
+$Comp
+L Connector:TestPoint TP18
+U 1 1 5D0590AE
+P 4150 7450
+F 0 "TP18" H 4208 7568 50  0000 L CNN
+F 1 "12V OUT" H 4208 7477 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill0.7mm" H 4350 7450 50  0001 C CNN
+F 3 "~" H 4350 7450 50  0001 C CNN
+	1    4150 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP19
+U 1 1 5D05976A
+P 4550 7450
+F 0 "TP19" H 4608 7568 50  0000 L CNN
+F 1 "12V IN" H 4608 7477 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill0.7mm" H 4750 7450 50  0001 C CNN
+F 3 "~" H 4750 7450 50  0001 C CNN
+	1    4550 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP23
+U 1 1 5D059B39
+P 11000 1650
+F 0 "TP23" H 11058 1768 50  0000 L CNN
+F 1 "3.3V" H 11125 1550 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill0.7mm" H 11200 1650 50  0001 C CNN
+F 3 "~" H 11200 1650 50  0001 C CNN
+	1    11000 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP22
+U 1 1 5D05D9B8
+P 10600 1650
+F 0 "TP22" H 10658 1768 50  0000 L CNN
+F 1 "DP83848 VCC" H 10300 1825 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill0.7mm" H 10800 1650 50  0001 C CNN
+F 3 "~" H 10800 1650 50  0001 C CNN
+	1    10600 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP16
+U 1 1 5D060BAD
+P 9900 6225
+F 0 "TP16" H 9958 6343 50  0000 L CNN
+F 1 "MCU AVCC" H 9958 6252 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill0.7mm" H 10100 6225 50  0001 C CNN
+F 3 "~" H 10100 6225 50  0001 C CNN
+	1    9900 6225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP15
+U 1 1 5D0613D3
+P 10600 5600
+F 0 "TP15" H 10658 5718 50  0000 L CNN
+F 1 "MCU DVCC" H 10658 5627 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill0.7mm" H 10800 5600 50  0001 C CNN
+F 3 "~" H 10800 5600 50  0001 C CNN
+	1    10600 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP14
+U 1 1 5D06269D
+P 10300 5600
+F 0 "TP14" V 10495 5672 50  0000 C CNN
+F 1 "3.3V" V 10404 5672 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill0.7mm" H 10500 5600 50  0001 C CNN
+F 3 "~" H 10500 5600 50  0001 C CNN
+	1    10300 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP21
+U 1 1 5D06383B
+P 9025 2875
+F 0 "TP21" V 8979 3063 50  0000 L CNN
+F 1 "SD Card VCC" V 9070 3063 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill0.7mm" H 9225 2875 50  0001 C CNN
+F 3 "~" H 9225 2875 50  0001 C CNN
+	1    9025 2875
+	0    1    1    0   
+$EndComp
+Text GLabel 10950 5700 1    50   Input ~ 0
+3.3VDDC
+Wire Wire Line
+	10450 5700 10300 5700
+Wire Wire Line
+	10300 5700 10300 5600
+Connection ~ 10300 5600
+Wire Wire Line
+	-2175 650  -1850 650 
+Connection ~ 10600 5600
+$Comp
+L Connector:TestPoint TP17
+U 1 1 5D1AE889
+P 9350 6500
+F 0 "TP17" H 9408 6618 50  0000 L CNN
+F 1 "3.3V" H 9408 6527 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill0.7mm" H 9550 6500 50  0001 C CNN
+F 3 "~" H 9550 6500 50  0001 C CNN
+	1    9350 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 6500 9500 6500
+Wire Wire Line
+	9900 6225 9900 6325
+Wire Wire Line
+	9900 6325 9650 6325
+Wire Wire Line
+	9650 6325 9650 6400
+Wire Wire Line
+	9600 6225 9550 6225
+Wire Wire Line
+	9550 6225 9550 6500
+Wire Wire Line
+	9550 6500 9500 6500
+Connection ~ 9500 6500
+Connection ~ 9900 6225
+$Comp
+L Device:C C29
+U 1 1 5CED44A3
+P 8750 6550
+F 0 "C29" H 8865 6596 50  0000 L CNN
+F 1 "0.1uF" H 8865 6505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8788 6400 50  0001 C CNN
+F 3 "~" H 8750 6550 50  0001 C CNN
+	1    8750 6550
+	1    0    0    -1  
+$EndComp
+Text GLabel 10800 4250 0    50   Input ~ 0
+SCL_DS
+Wire Notes Line
+	9425 4700 9425 3900
+Text GLabel -3250 1200 0    50   Input ~ 0
+3.3VDDC
+Text GLabel -550 650  1    50   Input ~ 0
+3.3VADC
+Text GLabel 6050 1800 0    50   Input ~ 0
+3.3VADC
+Wire Wire Line
+	7450 2100 7450 1800
+Wire Wire Line
+	7450 1800 6950 1800
+Connection ~ 6950 1800
+Wire Wire Line
+	7250 1850 7250 1725
+Connection ~ 7250 1850
+$Comp
+L Connector_Generic:Conn_01x07 J20
+U 1 1 5D71BC1C
+P 2150 6225
+F 0 "J20" V 2250 6375 50  0000 R CNN
+F 1 "PWM OUT" V 2250 6200 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical" H 2150 6225 50  0001 C CNN
+F 3 "~" H 2150 6225 50  0001 C CNN
+	1    2150 6225
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1950 6425 3    50   Input ~ 0
+PA15
+Text GLabel 2150 6425 3    50   Input ~ 0
+PD14
+Text GLabel 1875 7325 3    50   Input ~ 0
+PD13
+Text GLabel 2350 6425 3    50   Input ~ 0
+PD12
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0109
+U 1 1 5D7456EE
+P 2450 6425
+F 0 "#PWR0109" H 2450 6175 50  0001 C CNN
+F 1 "GND" V 2455 6297 50  0000 R CNN
+F 2 "" H 2450 6425 60  0000 C CNN
+F 3 "" H 2450 6425 60  0000 C CNN
+	1    2450 6425
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0112
+U 1 1 5D7465C1
+P 1850 6425
+F 0 "#PWR0112" H 1850 6175 50  0001 C CNN
+F 1 "GND" V 1855 6297 50  0000 R CNN
+F 2 "" H 1850 6425 60  0000 C CNN
+F 3 "" H 1850 6425 60  0000 C CNN
+	1    1850 6425
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	1750 6750 3700 6750
+Text Notes 1750 6125 0    79   ~ 0
+PWM
+$Comp
+L Connector_Generic:Conn_01x03 J19
+U 1 1 5D78C16B
+P 1975 7125
+F 0 "J19" V 2075 7325 50  0000 R CNN
+F 1 "Servo(PD13)" V 2075 7175 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 1975 7125 50  0001 C CNN
+F 3 "~" H 1975 7125 50  0001 C CNN
+	1    1975 7125
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1825 7725 0    50   Input ~ 0
+5VOUT
+Text Notes 1750 6825 0    39   ~ 0
+Servo
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0116
+U 1 1 5D7D1F2C
+P 2250 6425
+F 0 "#PWR0116" H 2250 6175 50  0001 C CNN
+F 1 "GND" V 2255 6297 50  0000 R CNN
+F 2 "" H 2250 6425 60  0000 C CNN
+F 3 "" H 2250 6425 60  0000 C CNN
+	1    2250 6425
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0118
+U 1 1 5D7D2355
+P 2050 6425
+F 0 "#PWR0118" H 2050 6175 50  0001 C CNN
+F 1 "GND" V 2055 6297 50  0000 R CNN
+F 2 "" H 2050 6425 60  0000 C CNN
+F 3 "" H 2050 6425 60  0000 C CNN
+	1    2050 6425
+	1    0    0    -1  
+$EndComp
+Text GLabel 5350 2600 1    50   Input ~ 0
+3.3VDDC
+$Comp
+L Device:R R2
+U 1 1 5CF8B4FC
+P 4850 1950
+F 0 "R2" V 4750 2000 50  0000 C CNN
+F 1 "220" V 4950 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4780 1950 50  0001 C CNN
+F 3 "~" H 4850 1950 50  0001 C CNN
+	1    4850 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q1
+U 1 1 5CF91543
+P 5100 1750
+F 0 "Q1" H 5291 1796 50  0000 L CNN
+F 1 "BC547" H 5291 1705 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5300 1675 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 5100 1750 50  0001 L CNN
+	1    5100 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Buzzer BZ1
+U 1 1 5CF8EB32
+P 5100 2050
+F 0 "BZ1" V 5100 1750 50  0000 L CNN
+F 1 "Buzzer(PC6)" V 5200 1650 50  0000 L CNN
+F 2 "Buzzer_Beeper:Buzzer_12x9.5RM7.6" V 5075 2150 50  0001 C CNN
+F 3 "~" V 5075 2150 50  0001 C CNN
+	1    5100 2050
+	0    -1   1    0   
+$EndComp
+Text Notes 4950 2400 0    157  ~ 0
+SW
+$Comp
+L Jumper:SolderJumper_2_Open JP43
+U 1 1 5D0A1B4A
+P 1975 7725
+F 0 "JP43" H 2450 7725 50  0000 L CNN
+F 1 "Servo 5V" H 1875 7650 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 1975 7725 50  0001 C CNN
+F 3 "~" H 1975 7725 50  0001 C CNN
+	1    1975 7725
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2125 7725 2125 7625
+Wire Wire Line
+	2125 7625 1975 7625
+Wire Wire Line
+	1975 7625 1975 7450
+$Comp
+L Connector:TestPoint TP24
+U 1 1 5D0C48C1
+P 1700 7650
+F 0 "TP24" V 1875 7750 50  0000 C CNN
+F 1 "5V" V 1775 7775 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill0.7mm" H 1900 7650 50  0001 C CNN
+F 3 "~" H 1900 7650 50  0001 C CNN
+	1    1700 7650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1700 7650 1825 7650
+Wire Wire Line
+	1825 7650 1825 7725
+$Comp
+L Connector:TestPoint TP25
+U 1 1 5D0E530C
+P 2125 6950
+F 0 "TP25" V 2275 7025 50  0000 C CNN
+F 1 "Servo VCC" V 2200 7125 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill0.7mm" H 2325 6950 50  0001 C CNN
+F 3 "~" H 2325 6950 50  0001 C CNN
+	1    2125 6950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2125 6950 2150 6950
+Wire Notes Line
+	1750 7425 1350 7425
+Wire Notes Line
+	1350 7425 1350 7900
+Wire Notes Line
+	1750 7425 1750 6000
+$Comp
+L Connector_Generic:Conn_01x06 J21
+U 1 1 5D080C34
+P 1625 6950
+F 0 "J21" H 1600 7250 50  0000 L CNN
+F 1 "FT232RL" H 1400 6525 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 1625 6950 50  0001 C CNN
+F 3 "~" H 1625 6950 50  0001 C CNN
+	1    1625 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0122
+U 1 1 5D082C30
+P 1425 6750
+F 0 "#PWR0122" H 1425 6500 50  0001 C CNN
+F 1 "GND" V 1430 6622 50  0000 R CNN
+F 2 "" H 1425 6750 60  0000 C CNN
+F 3 "" H 1425 6750 60  0000 C CNN
+	1    1425 6750
+	0    1    1    0   
+$EndComp
+Text GLabel 1425 6850 0    50   Input ~ 0
+CTS
+Text GLabel 1425 7050 0    50   Input ~ 0
+UART_TX
+Text GLabel 1425 7150 0    50   Input ~ 0
+UART_RX
+Text GLabel 1425 7250 0    50   Input ~ 0
+DTR
+$Comp
+L Jumper:SolderJumper_2_Open JP42
+U 1 1 5D08BE3B
+P 825 7775
+F 0 "JP42" H 1075 7700 50  0000 L CNN
+F 1 "RX" H 725 7700 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 825 7775 50  0001 C CNN
+F 3 "~" H 825 7775 50  0001 C CNN
+	1    825  7775
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP41
+U 1 1 5D08E99B
+P 825 7575
+F 0 "JP41" H 1075 7500 50  0000 L CNN
+F 1 "TX" H 725 7500 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 825 7575 50  0001 C CNN
+F 3 "~" H 825 7575 50  0001 C CNN
+	1    825  7575
+	-1   0    0    1   
+$EndComp
+Text GLabel 675  7775 0    50   Input ~ 0
+PA9
+Text GLabel 675  7575 0    50   Input ~ 0
+PA10
+Text GLabel 975  7775 2    50   Input ~ 0
+UART_RX
+Text GLabel 975  7575 2    50   Input ~ 0
+UART_TX
+Wire Notes Line
+	425  7900 425  6600
+Wire Notes Line
+	425  6600 1750 6600
+Wire Notes Line
+	425  7900 11300 7900
+Text Notes 425  6825 0    157  ~ 0
+UART
+Wire Notes Line
+	5500 1400 5500 400 
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0114
+U 1 1 5D792466
+P 2075 7325
+F 0 "#PWR0114" H 2075 7075 50  0001 C CNN
+F 1 "GND" V 2080 7197 50  0000 R CNN
+F 2 "" H 2075 7325 60  0000 C CNN
+F 3 "" H 2075 7325 60  0000 C CNN
+	1    2075 7325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 7450 1975 7450
+Wire Wire Line
+	2150 6950 2150 7450
+Connection ~ 1975 7450
+Wire Wire Line
+	1975 7450 1975 7325
+Text GLabel 1425 6950 0    50   Input ~ 0
+VCC
+$Comp
+L Device:D D8
+U 1 1 5D0BA943
+P 7300 5350
+F 0 "D8" H 7350 5225 50  0000 C CNN
+F 1 "CGRC504-G" H 7025 5275 50  0000 C CNN
+F 2 "PCB:SS54" H 7300 5350 50  0001 C CNN
+F 3 "~" H 7300 5350 50  0001 C CNN
+	1    7300 5350
+	-1   0    0    1   
+$EndComp
+Connection ~ 7450 5350
+$Comp
+L Connector:TestPoint TP20
+U 1 1 5D064BB8
+P 8625 2875
+F 0 "TP20" V 8579 3063 50  0000 L CNN
+F 1 "3.3V" V 8670 3063 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Bridge_Pitch2.54mm_Drill0.7mm" H 8825 2875 50  0001 C CNN
+F 3 "~" H 8825 2875 50  0001 C CNN
+	1    8625 2875
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP37
+U 1 1 5D3424E0
+P 9750 6225
+F 0 "JP37" H 10000 6175 50  0000 L CNN
+F 1 "MCU AVCC" H 9650 6150 24  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 9750 6225 50  0001 C CNN
+F 3 "~" H 9750 6225 50  0001 C CNN
+	1    9750 6225
+	-1   0    0    1   
+$EndComp
+Text GLabel 3175 5500 2    50   Input ~ 0
+xDCS
+Text GLabel 3175 5400 2    50   Input ~ 0
+xRESET
+Text GLabel 3175 5300 2    50   Input ~ 0
+DREQ
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0106
+U 1 1 5D119456
+P 2675 5100
+F 0 "#PWR0106" H 2675 4850 50  0001 C CNN
+F 1 "GND" V 2680 4972 50  0000 R CNN
+F 2 "" H 2675 5100 60  0000 C CNN
+F 3 "" H 2675 5100 60  0000 C CNN
+	1    2675 5100
+	0    1    -1   0   
+$EndComp
+Text GLabel 2675 5000 1    50   Input ~ 0
+3.3VOUT
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J18
+U 1 1 5D110413
+P 2975 5200
+F 0 "J18" H 3025 5500 50  0000 C CNN
+F 1 "VS1003" H 3025 4800 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Vertical" H 2975 5200 50  0001 C CNN
+F 3 "~" H 2975 5200 50  0001 C CNN
+	1    2975 5200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2325 5200 2675 5200
+Wire Wire Line
+	2325 5300 2675 5300
+Wire Wire Line
+	2325 5400 2675 5400
+Wire Wire Line
+	2325 5500 2675 5500
+Wire Notes Line
+	5550 3400 5550 4700
+$Comp
+L Device:R R1
+U 1 1 5CF961F3
+P 4900 1600
+F 0 "R1" V 4800 1625 50  0000 C CNN
+F 1 "10k" V 4975 1600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4830 1600 50  0001 C CNN
+F 3 "~" H 4900 1600 50  0001 C CNN
+	1    4900 1600
+	-1   0    0    1   
+$EndComp
+Wire Notes Line
+	4900 2200 5550 2200
+Wire Notes Line
+	5525 1400 5525 2200
+Wire Notes Line
+	5550 2400 5550 2200
+Wire Notes Line
+	4350 2150 4900 2150
+Wire Wire Line
+	4775 1750 4900 1750
+Connection ~ 4900 1750
+Wire Wire Line
+	5200 1550 5250 1550
+$Comp
+L STM32F4개발보드-rescue:GND-nixie-cache #PWR0129
+U 1 1 5D3CCA64
+P 4900 1450
+F 0 "#PWR0129" H 4900 1200 50  0001 C CNN
+F 1 "GND" V 4905 1322 50  0000 R CNN
+F 2 "" H 4900 1450 60  0000 C CNN
+F 3 "" H 4900 1450 60  0000 C CNN
+	1    4900 1450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	-3250 1200 -3200 1200
+$EndSCHEMATC
